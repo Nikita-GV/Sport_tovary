@@ -1,0 +1,10 @@
+C:\Users\Пользователь\source\repos\Sport_tovary\Sport_tovary\bin\Debug\Sport_tovary.exe.config
+C:\Users\Пользователь\source\repos\Sport_tovary\Sport_tovary\bin\Debug\Sport_tovary.exe
+C:\Users\Пользователь\source\repos\Sport_tovary\Sport_tovary\bin\Debug\Sport_tovary.pdb
+C:\Users\Пользователь\source\repos\Sport_tovary\Sport_tovary\obj\Debug\Sport_tovary.csprojAssemblyReference.cache
+C:\Users\Пользователь\source\repos\Sport_tovary\Sport_tovary\obj\Debug\Sport_tovary.Form1.resources
+C:\Users\Пользователь\source\repos\Sport_tovary\Sport_tovary\obj\Debug\Sport_tovary.Properties.Resources.resources
+C:\Users\Пользователь\source\repos\Sport_tovary\Sport_tovary\obj\Debug\Sport_tovary.csproj.GenerateResource.cache
+C:\Users\Пользователь\source\repos\Sport_tovary\Sport_tovary\obj\Debug\Sport_tovary.csproj.CoreCompileInputs.cache
+C:\Users\Пользователь\source\repos\Sport_tovary\Sport_tovary\obj\Debug\Sport_tovary.exe
+C:\Users\Пользователь\source\repos\Sport_tovary\Sport_tovary\obj\Debug\Sport_tovary.pdb
