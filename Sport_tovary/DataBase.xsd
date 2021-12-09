@@ -716,24 +716,6 @@ SELECT Nomer_zakypki, Name_postavshika, Sposob_dostavki, Price_zakypki FROM Zaky
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Postavshik_zakypka" msprop:Generator_TableClassName="Postavshik_zakypkaDataTable" msprop:Generator_TableVarName="tablePostavshik_zakypka" msprop:Generator_TablePropName="Postavshik_zakypka" msprop:Generator_RowDeletingName="Postavshik_zakypkaRowDeleting" msprop:Generator_RowChangingName="Postavshik_zakypkaRowChanging" msprop:Generator_RowEvHandlerName="Postavshik_zakypkaRowChangeEventHandler" msprop:Generator_RowDeletedName="Postavshik_zakypkaRowDeleted" msprop:Generator_UserTableName="Postavshik_zakypka" msprop:Generator_RowChangedName="Postavshik_zakypkaRowChanged" msprop:Generator_RowEvArgName="Postavshik_zakypkaRowChangeEvent" msprop:Generator_RowClassName="Postavshik_zakypkaRow">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="ID_postavshik_zakypka" msprop:Generator_ColumnVarNameInTable="columnID_postavshik_zakypka" msprop:Generator_ColumnPropNameInRow="ID_postavshik_zakypka" msprop:Generator_ColumnPropNameInTable="ID_postavshik_zakypkaColumn" msprop:Generator_UserColumnName="ID_postavshik_zakypka" type="xs:long" />
-              <xs:element name="ID_postavshika" msprop:Generator_ColumnVarNameInTable="columnID_postavshika" msprop:Generator_ColumnPropNameInRow="ID_postavshika" msprop:Generator_ColumnPropNameInTable="ID_postavshikaColumn" msprop:Generator_UserColumnName="ID_postavshika" type="xs:long" />
-              <xs:element name="Nomer_zakypki" msprop:Generator_ColumnVarNameInTable="columnNomer_zakypki" msprop:Generator_ColumnPropNameInRow="Nomer_zakypki" msprop:Generator_ColumnPropNameInTable="Nomer_zakypkiColumn" msprop:Generator_UserColumnName="Nomer_zakypki" type="xs:long" />
-              <xs:element name="Name_tovara" msprop:Generator_ColumnVarNameInTable="columnName_tovara" msprop:Generator_ColumnPropNameInRow="Name_tovara" msprop:Generator_ColumnPropNameInTable="Name_tovaraColumn" msprop:Generator_UserColumnName="Name_tovara">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="20" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="Kolichestvo_tovara" msprop:Generator_ColumnVarNameInTable="columnKolichestvo_tovara" msprop:Generator_ColumnPropNameInRow="Kolichestvo_tovara" msprop:Generator_ColumnPropNameInTable="Kolichestvo_tovaraColumn" msprop:Generator_UserColumnName="Kolichestvo_tovara" type="xs:long" />
-              <xs:element name="Obshaya_summa" msprop:Generator_ColumnVarNameInTable="columnObshaya_summa" msprop:Generator_ColumnPropNameInRow="Obshaya_summa" msprop:Generator_ColumnPropNameInTable="Obshaya_summaColumn" msprop:Generator_UserColumnName="Obshaya_summa" type="xs:long" />
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
         <xs:element name="Prodaga" msprop:Generator_TableClassName="ProdagaDataTable" msprop:Generator_TableVarName="tableProdaga" msprop:Generator_TablePropName="Prodaga" msprop:Generator_RowDeletingName="ProdagaRowDeleting" msprop:Generator_RowChangingName="ProdagaRowChanging" msprop:Generator_RowEvHandlerName="ProdagaRowChangeEventHandler" msprop:Generator_RowDeletedName="ProdagaRowDeleted" msprop:Generator_UserTableName="Prodaga" msprop:Generator_RowChangedName="ProdagaRowChanged" msprop:Generator_RowEvArgName="ProdagaRowChangeEvent" msprop:Generator_RowClassName="ProdagaRow">
           <xs:complexType>
             <xs:sequence>
@@ -755,36 +737,6 @@ SELECT Nomer_zakypki, Name_postavshika, Sposob_dostavki, Price_zakypki FROM Zaky
               <xs:element name="Kolichestvo_prodavaemyh_edinits" msprop:Generator_ColumnVarNameInTable="columnKolichestvo_prodavaemyh_edinits" msprop:Generator_ColumnPropNameInRow="Kolichestvo_prodavaemyh_edinits" msprop:Generator_ColumnPropNameInTable="Kolichestvo_prodavaemyh_edinitsColumn" msprop:Generator_UserColumnName="Kolichestvo_prodavaemyh_edinits" type="xs:long" />
               <xs:element name="Price_prodagy" msprop:Generator_ColumnVarNameInTable="columnPrice_prodagy" msprop:Generator_ColumnPropNameInRow="Price_prodagy" msprop:Generator_ColumnPropNameInTable="Price_prodagyColumn" msprop:Generator_UserColumnName="Price_prodagy" type="xs:long" />
               <xs:element name="Name_store" msprop:Generator_ColumnVarNameInTable="columnName_store" msprop:Generator_ColumnPropNameInRow="Name_store" msprop:Generator_ColumnPropNameInTable="Name_storeColumn" msprop:Generator_UserColumnName="Name_store">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="20" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="Prodaga_sport_tovary" msprop:Generator_TableClassName="Prodaga_sport_tovaryDataTable" msprop:Generator_TableVarName="tableProdaga_sport_tovary" msprop:Generator_TablePropName="Prodaga_sport_tovary" msprop:Generator_RowDeletingName="Prodaga_sport_tovaryRowDeleting" msprop:Generator_RowChangingName="Prodaga_sport_tovaryRowChanging" msprop:Generator_RowEvHandlerName="Prodaga_sport_tovaryRowChangeEventHandler" msprop:Generator_RowDeletedName="Prodaga_sport_tovaryRowDeleted" msprop:Generator_UserTableName="Prodaga_sport_tovary" msprop:Generator_RowChangedName="Prodaga_sport_tovaryRowChanged" msprop:Generator_RowEvArgName="Prodaga_sport_tovaryRowChangeEvent" msprop:Generator_RowClassName="Prodaga_sport_tovaryRow">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="ID_prodaga_sport_tovary" msprop:Generator_ColumnVarNameInTable="columnID_prodaga_sport_tovary" msprop:Generator_ColumnPropNameInRow="ID_prodaga_sport_tovary" msprop:Generator_ColumnPropNameInTable="ID_prodaga_sport_tovaryColumn" msprop:Generator_UserColumnName="ID_prodaga_sport_tovary" type="xs:long" />
-              <xs:element name="Nomer_prodagy" msprop:Generator_ColumnVarNameInTable="columnNomer_prodagy" msprop:Generator_ColumnPropNameInRow="Nomer_prodagy" msprop:Generator_ColumnPropNameInTable="Nomer_prodagyColumn" msprop:Generator_UserColumnName="Nomer_prodagy" type="xs:long" />
-              <xs:element name="ID_tovara" msprop:Generator_ColumnVarNameInTable="columnID_tovara" msprop:Generator_ColumnPropNameInRow="ID_tovara" msprop:Generator_ColumnPropNameInTable="ID_tovaraColumn" msprop:Generator_UserColumnName="ID_tovara" type="xs:long" />
-              <xs:element name="Sposob_dostavki" msprop:Generator_ColumnVarNameInTable="columnSposob_dostavki" msprop:Generator_ColumnPropNameInRow="Sposob_dostavki" msprop:Generator_ColumnPropNameInTable="Sposob_dostavkiColumn" msprop:Generator_UserColumnName="Sposob_dostavki">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="20" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="Name_tovara" msprop:Generator_ColumnVarNameInTable="columnName_tovara" msprop:Generator_ColumnPropNameInRow="Name_tovara" msprop:Generator_ColumnPropNameInTable="Name_tovaraColumn" msprop:Generator_UserColumnName="Name_tovara">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="20" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="Forma_tovara" msprop:Generator_ColumnVarNameInTable="columnForma_tovara" msprop:Generator_ColumnPropNameInRow="Forma_tovara" msprop:Generator_ColumnPropNameInTable="Forma_tovaraColumn" msprop:Generator_UserColumnName="Forma_tovara">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="20" />
@@ -836,36 +788,6 @@ SELECT Nomer_zakypki, Name_postavshika, Sposob_dostavki, Price_zakypki FROM Zaky
                 </xs:simpleType>
               </xs:element>
               <xs:element name="Name_proizvoditel" msprop:Generator_ColumnVarNameInTable="columnName_proizvoditel" msprop:Generator_ColumnPropNameInRow="Name_proizvoditel" msprop:Generator_ColumnPropNameInTable="Name_proizvoditelColumn" msprop:Generator_UserColumnName="Name_proizvoditel" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="20" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="Proizvoditel_postavshik" msprop:Generator_TableClassName="Proizvoditel_postavshikDataTable" msprop:Generator_TableVarName="tableProizvoditel_postavshik" msprop:Generator_TablePropName="Proizvoditel_postavshik" msprop:Generator_RowDeletingName="Proizvoditel_postavshikRowDeleting" msprop:Generator_RowChangingName="Proizvoditel_postavshikRowChanging" msprop:Generator_RowEvHandlerName="Proizvoditel_postavshikRowChangeEventHandler" msprop:Generator_RowDeletedName="Proizvoditel_postavshikRowDeleted" msprop:Generator_UserTableName="Proizvoditel_postavshik" msprop:Generator_RowChangedName="Proizvoditel_postavshikRowChanged" msprop:Generator_RowEvArgName="Proizvoditel_postavshikRowChangeEvent" msprop:Generator_RowClassName="Proizvoditel_postavshikRow">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="ID_postavshik_proizvoditel" msprop:Generator_ColumnVarNameInTable="columnID_postavshik_proizvoditel" msprop:Generator_ColumnPropNameInRow="ID_postavshik_proizvoditel" msprop:Generator_ColumnPropNameInTable="ID_postavshik_proizvoditelColumn" msprop:Generator_UserColumnName="ID_postavshik_proizvoditel" type="xs:long" />
-              <xs:element name="ID_tovara" msprop:Generator_ColumnVarNameInTable="columnID_tovara" msprop:Generator_ColumnPropNameInRow="ID_tovara" msprop:Generator_ColumnPropNameInTable="ID_tovaraColumn" msprop:Generator_UserColumnName="ID_tovara" type="xs:long" />
-              <xs:element name="ID_postavshika" msprop:Generator_ColumnVarNameInTable="columnID_postavshika" msprop:Generator_ColumnPropNameInRow="ID_postavshika" msprop:Generator_ColumnPropNameInTable="ID_postavshikaColumn" msprop:Generator_UserColumnName="ID_postavshika" type="xs:long" />
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="Proizvoditel_sport_tovary" msprop:Generator_TableClassName="Proizvoditel_sport_tovaryDataTable" msprop:Generator_TableVarName="tableProizvoditel_sport_tovary" msprop:Generator_TablePropName="Proizvoditel_sport_tovary" msprop:Generator_RowDeletingName="Proizvoditel_sport_tovaryRowDeleting" msprop:Generator_RowChangingName="Proizvoditel_sport_tovaryRowChanging" msprop:Generator_RowEvHandlerName="Proizvoditel_sport_tovaryRowChangeEventHandler" msprop:Generator_RowDeletedName="Proizvoditel_sport_tovaryRowDeleted" msprop:Generator_UserTableName="Proizvoditel_sport_tovary" msprop:Generator_RowChangedName="Proizvoditel_sport_tovaryRowChanged" msprop:Generator_RowEvArgName="Proizvoditel_sport_tovaryRowChangeEvent" msprop:Generator_RowClassName="Proizvoditel_sport_tovaryRow">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="ID_tovara" msprop:Generator_ColumnVarNameInTable="columnID_tovara" msprop:Generator_ColumnPropNameInRow="ID_tovara" msprop:Generator_ColumnPropNameInTable="ID_tovaraColumn" msprop:Generator_UserColumnName="ID_tovara" type="xs:long" />
-              <xs:element name="Name_tovara" msprop:Generator_ColumnVarNameInTable="columnName_tovara" msprop:Generator_ColumnPropNameInRow="Name_tovara" msprop:Generator_ColumnPropNameInTable="Name_tovaraColumn" msprop:Generator_UserColumnName="Name_tovara">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="50" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="Name_proizvoditel" msprop:Generator_ColumnVarNameInTable="columnName_proizvoditel" msprop:Generator_ColumnPropNameInRow="Name_proizvoditel" msprop:Generator_ColumnPropNameInTable="Name_proizvoditelColumn" msprop:Generator_UserColumnName="Name_proizvoditel">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="20" />
@@ -949,34 +871,96 @@ SELECT Nomer_zakypki, Name_postavshika, Sposob_dostavki, Price_zakypki FROM Zaky
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="Postavshik_zakypka" msprop:Generator_TableClassName="Postavshik_zakypkaDataTable" msprop:Generator_TableVarName="tablePostavshik_zakypka" msprop:Generator_TablePropName="Postavshik_zakypka" msprop:Generator_RowDeletingName="Postavshik_zakypkaRowDeleting" msprop:Generator_RowChangingName="Postavshik_zakypkaRowChanging" msprop:Generator_RowEvHandlerName="Postavshik_zakypkaRowChangeEventHandler" msprop:Generator_RowDeletedName="Postavshik_zakypkaRowDeleted" msprop:Generator_UserTableName="Postavshik_zakypka" msprop:Generator_RowChangedName="Postavshik_zakypkaRowChanged" msprop:Generator_RowEvArgName="Postavshik_zakypkaRowChangeEvent" msprop:Generator_RowClassName="Postavshik_zakypkaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_postavshik_zakypka" msprop:Generator_ColumnVarNameInTable="columnID_postavshik_zakypka" msprop:Generator_ColumnPropNameInRow="ID_postavshik_zakypka" msprop:Generator_ColumnPropNameInTable="ID_postavshik_zakypkaColumn" msprop:Generator_UserColumnName="ID_postavshik_zakypka" type="xs:long" />
+              <xs:element name="ID_postavshika" msprop:Generator_ColumnVarNameInTable="columnID_postavshika" msprop:Generator_ColumnPropNameInRow="ID_postavshika" msprop:Generator_ColumnPropNameInTable="ID_postavshikaColumn" msprop:Generator_UserColumnName="ID_postavshika" type="xs:long" />
+              <xs:element name="Nomer_zakypki" msprop:Generator_ColumnVarNameInTable="columnNomer_zakypki" msprop:Generator_ColumnPropNameInRow="Nomer_zakypki" msprop:Generator_ColumnPropNameInTable="Nomer_zakypkiColumn" msprop:Generator_UserColumnName="Nomer_zakypki" type="xs:long" />
+              <xs:element name="Name_tovara" msprop:Generator_ColumnVarNameInTable="columnName_tovara" msprop:Generator_ColumnPropNameInRow="Name_tovara" msprop:Generator_ColumnPropNameInTable="Name_tovaraColumn" msprop:Generator_UserColumnName="Name_tovara">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Kolichestvo_tovara" msprop:Generator_ColumnVarNameInTable="columnKolichestvo_tovara" msprop:Generator_ColumnPropNameInRow="Kolichestvo_tovara" msprop:Generator_ColumnPropNameInTable="Kolichestvo_tovaraColumn" msprop:Generator_UserColumnName="Kolichestvo_tovara" type="xs:long" />
+              <xs:element name="Obshaya_summa" msprop:Generator_ColumnVarNameInTable="columnObshaya_summa" msprop:Generator_ColumnPropNameInRow="Obshaya_summa" msprop:Generator_ColumnPropNameInTable="Obshaya_summaColumn" msprop:Generator_UserColumnName="Obshaya_summa" type="xs:long" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Prodaga_sport_tovary" msprop:Generator_TableClassName="Prodaga_sport_tovaryDataTable" msprop:Generator_TableVarName="tableProdaga_sport_tovary" msprop:Generator_TablePropName="Prodaga_sport_tovary" msprop:Generator_RowDeletingName="Prodaga_sport_tovaryRowDeleting" msprop:Generator_RowChangingName="Prodaga_sport_tovaryRowChanging" msprop:Generator_RowEvHandlerName="Prodaga_sport_tovaryRowChangeEventHandler" msprop:Generator_RowDeletedName="Prodaga_sport_tovaryRowDeleted" msprop:Generator_UserTableName="Prodaga_sport_tovary" msprop:Generator_RowChangedName="Prodaga_sport_tovaryRowChanged" msprop:Generator_RowEvArgName="Prodaga_sport_tovaryRowChangeEvent" msprop:Generator_RowClassName="Prodaga_sport_tovaryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_prodaga_sport_tovary" msprop:Generator_ColumnVarNameInTable="columnID_prodaga_sport_tovary" msprop:Generator_ColumnPropNameInRow="ID_prodaga_sport_tovary" msprop:Generator_ColumnPropNameInTable="ID_prodaga_sport_tovaryColumn" msprop:Generator_UserColumnName="ID_prodaga_sport_tovary" type="xs:long" />
+              <xs:element name="Nomer_prodagy" msprop:Generator_ColumnVarNameInTable="columnNomer_prodagy" msprop:Generator_ColumnPropNameInRow="Nomer_prodagy" msprop:Generator_ColumnPropNameInTable="Nomer_prodagyColumn" msprop:Generator_UserColumnName="Nomer_prodagy" type="xs:long" />
+              <xs:element name="ID_tovara" msprop:Generator_ColumnVarNameInTable="columnID_tovara" msprop:Generator_ColumnPropNameInRow="ID_tovara" msprop:Generator_ColumnPropNameInTable="ID_tovaraColumn" msprop:Generator_UserColumnName="ID_tovara" type="xs:long" />
+              <xs:element name="Sposob_dostavki" msprop:Generator_ColumnVarNameInTable="columnSposob_dostavki" msprop:Generator_ColumnPropNameInRow="Sposob_dostavki" msprop:Generator_ColumnPropNameInTable="Sposob_dostavkiColumn" msprop:Generator_UserColumnName="Sposob_dostavki">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Name_tovara" msprop:Generator_ColumnVarNameInTable="columnName_tovara" msprop:Generator_ColumnPropNameInRow="Name_tovara" msprop:Generator_ColumnPropNameInTable="Name_tovaraColumn" msprop:Generator_UserColumnName="Name_tovara">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Forma_tovara" msprop:Generator_ColumnVarNameInTable="columnForma_tovara" msprop:Generator_ColumnPropNameInRow="Forma_tovara" msprop:Generator_ColumnPropNameInTable="Forma_tovaraColumn" msprop:Generator_UserColumnName="Forma_tovara">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Proizvoditel_postavshik" msprop:Generator_TableClassName="Proizvoditel_postavshikDataTable" msprop:Generator_TableVarName="tableProizvoditel_postavshik" msprop:Generator_TablePropName="Proizvoditel_postavshik" msprop:Generator_RowDeletingName="Proizvoditel_postavshikRowDeleting" msprop:Generator_RowChangingName="Proizvoditel_postavshikRowChanging" msprop:Generator_RowEvHandlerName="Proizvoditel_postavshikRowChangeEventHandler" msprop:Generator_RowDeletedName="Proizvoditel_postavshikRowDeleted" msprop:Generator_UserTableName="Proizvoditel_postavshik" msprop:Generator_RowChangedName="Proizvoditel_postavshikRowChanged" msprop:Generator_RowEvArgName="Proizvoditel_postavshikRowChangeEvent" msprop:Generator_RowClassName="Proizvoditel_postavshikRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_postavshik_proizvoditel" msprop:Generator_ColumnVarNameInTable="columnID_postavshik_proizvoditel" msprop:Generator_ColumnPropNameInRow="ID_postavshik_proizvoditel" msprop:Generator_ColumnPropNameInTable="ID_postavshik_proizvoditelColumn" msprop:Generator_UserColumnName="ID_postavshik_proizvoditel" type="xs:long" />
+              <xs:element name="ID_tovara" msprop:Generator_ColumnVarNameInTable="columnID_tovara" msprop:Generator_ColumnPropNameInRow="ID_tovara" msprop:Generator_ColumnPropNameInTable="ID_tovaraColumn" msprop:Generator_UserColumnName="ID_tovara" type="xs:long" />
+              <xs:element name="ID_postavshika" msprop:Generator_ColumnVarNameInTable="columnID_postavshika" msprop:Generator_ColumnPropNameInRow="ID_postavshika" msprop:Generator_ColumnPropNameInTable="ID_postavshikaColumn" msprop:Generator_UserColumnName="ID_postavshika" type="xs:long" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Proizvoditel_sport_tovary" msprop:Generator_TableClassName="Proizvoditel_sport_tovaryDataTable" msprop:Generator_TableVarName="tableProizvoditel_sport_tovary" msprop:Generator_TablePropName="Proizvoditel_sport_tovary" msprop:Generator_RowDeletingName="Proizvoditel_sport_tovaryRowDeleting" msprop:Generator_RowChangingName="Proizvoditel_sport_tovaryRowChanging" msprop:Generator_RowEvHandlerName="Proizvoditel_sport_tovaryRowChangeEventHandler" msprop:Generator_RowDeletedName="Proizvoditel_sport_tovaryRowDeleted" msprop:Generator_UserTableName="Proizvoditel_sport_tovary" msprop:Generator_RowChangedName="Proizvoditel_sport_tovaryRowChanged" msprop:Generator_RowEvArgName="Proizvoditel_sport_tovaryRowChangeEvent" msprop:Generator_RowClassName="Proizvoditel_sport_tovaryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_tovara" msprop:Generator_ColumnVarNameInTable="columnID_tovara" msprop:Generator_ColumnPropNameInRow="ID_tovara" msprop:Generator_ColumnPropNameInTable="ID_tovaraColumn" msprop:Generator_UserColumnName="ID_tovara" type="xs:long" />
+              <xs:element name="Name_tovara" msprop:Generator_ColumnVarNameInTable="columnName_tovara" msprop:Generator_ColumnPropNameInRow="Name_tovara" msprop:Generator_ColumnPropNameInTable="Name_tovaraColumn" msprop:Generator_UserColumnName="Name_tovara">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Name_proizvoditel" msprop:Generator_ColumnVarNameInTable="columnName_proizvoditel" msprop:Generator_ColumnPropNameInRow="Name_proizvoditel" msprop:Generator_ColumnPropNameInTable="Name_proizvoditelColumn" msprop:Generator_UserColumnName="Name_proizvoditel">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
       </xs:choice>
     </xs:complexType>
     <xs:unique name="Constraint1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:Postavshik" />
       <xs:field xpath="mstns:ID_postavshika" />
     </xs:unique>
-    <xs:unique name="Postavshik_zakypka_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//mstns:Postavshik_zakypka" />
-      <xs:field xpath="mstns:ID_postavshik_zakypka" />
-    </xs:unique>
     <xs:unique name="Prodaga_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:Prodaga" />
       <xs:field xpath="mstns:Nomer_prodagy" />
     </xs:unique>
-    <xs:unique name="Prodaga_sport_tovary_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//mstns:Prodaga_sport_tovary" />
-      <xs:field xpath="mstns:ID_prodaga_sport_tovary" />
-    </xs:unique>
     <xs:unique name="Proizvoditel_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:Proizvoditel" />
-      <xs:field xpath="mstns:ID_tovara" />
-    </xs:unique>
-    <xs:unique name="Proizvoditel_postavshik_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//mstns:Proizvoditel_postavshik" />
-      <xs:field xpath="mstns:ID_postavshik_proizvoditel" />
-    </xs:unique>
-    <xs:unique name="Proizvoditel_sport_tovary_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//mstns:Proizvoditel_sport_tovary" />
       <xs:field xpath="mstns:ID_tovara" />
     </xs:unique>
     <xs:unique name="Sport_tovary_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
@@ -991,19 +975,33 @@ SELECT Nomer_zakypki, Name_postavshika, Sposob_dostavki, Price_zakypki FROM Zaky
       <xs:selector xpath=".//mstns:Zakypka" />
       <xs:field xpath="mstns:Nomer_zakypki" />
     </xs:unique>
+    <xs:unique name="Postavshik_zakypka_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Postavshik_zakypka" />
+      <xs:field xpath="mstns:ID_postavshik_zakypka" />
+    </xs:unique>
+    <xs:unique name="Prodaga_sport_tovary_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Prodaga_sport_tovary" />
+      <xs:field xpath="mstns:ID_prodaga_sport_tovary" />
+    </xs:unique>
+    <xs:unique name="Proizvoditel_postavshik_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Proizvoditel_postavshik" />
+      <xs:field xpath="mstns:ID_postavshik_proizvoditel" />
+    </xs:unique>
+    <xs:unique name="Proizvoditel_sport_tovary_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Proizvoditel_sport_tovary" />
+      <xs:field xpath="mstns:ID_tovara" />
+    </xs:unique>
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
+      <msdata:Relationship name="FK_Sport_tovary_Proizvoditel" msdata:parent="Proizvoditel" msdata:child="Sport_tovary" msdata:parentkey="ID_tovara" msdata:childkey="ID_tovara" msprop:Generator_UserChildTable="Sport_tovary" msprop:Generator_ChildPropName="GetSport_tovaryRows" msprop:Generator_UserRelationName="FK_Sport_tovary_Proizvoditel" msprop:Generator_ParentPropName="ProizvoditelRow" msprop:Generator_RelationVarName="relationFK_Sport_tovary_Proizvoditel" msprop:Generator_UserParentTable="Proizvoditel" />
+      <msdata:Relationship name="FK_Postavshik_zakypka_Zakypka" msdata:parent="Zakypka" msdata:child="Postavshik_zakypka" msdata:parentkey="Nomer_zakypki" msdata:childkey="Nomer_zakypki" msprop:Generator_UserChildTable="Postavshik_zakypka" msprop:Generator_ChildPropName="GetPostavshik_zakypkaRows" msprop:Generator_UserRelationName="FK_Postavshik_zakypka_Zakypka" msprop:Generator_RelationVarName="relationFK_Postavshik_zakypka_Zakypka" msprop:Generator_UserParentTable="Zakypka" msprop:Generator_ParentPropName="ZakypkaRow" />
       <msdata:Relationship name="FK_Postavshik_zakypka_Postavshik" msdata:parent="Postavshik" msdata:child="Postavshik_zakypka" msdata:parentkey="ID_postavshika" msdata:childkey="ID_postavshika" msprop:Generator_UserChildTable="Postavshik_zakypka" msprop:Generator_ChildPropName="GetPostavshik_zakypkaRows" msprop:Generator_UserRelationName="FK_Postavshik_zakypka_Postavshik" msprop:Generator_ParentPropName="PostavshikRow" msprop:Generator_RelationVarName="relationFK_Postavshik_zakypka_Postavshik" msprop:Generator_UserParentTable="Postavshik" />
       <msdata:Relationship name="FK_Prodaga_sport_tovary_Prodaga" msdata:parent="Prodaga" msdata:child="Prodaga_sport_tovary" msdata:parentkey="Nomer_prodagy" msdata:childkey="Nomer_prodagy" msprop:Generator_UserChildTable="Prodaga_sport_tovary" msprop:Generator_ChildPropName="GetProdaga_sport_tovaryRows" msprop:Generator_UserRelationName="FK_Prodaga_sport_tovary_Prodaga" msprop:Generator_ParentPropName="ProdagaRow" msprop:Generator_RelationVarName="relationFK_Prodaga_sport_tovary_Prodaga" msprop:Generator_UserParentTable="Prodaga" />
-      <msdata:Relationship name="FK_Proizvoditel_postavshik_Postavshik" msdata:parent="Postavshik" msdata:child="Proizvoditel_postavshik" msdata:parentkey="ID_postavshika" msdata:childkey="ID_postavshika" msprop:Generator_UserChildTable="Proizvoditel_postavshik" msprop:Generator_ChildPropName="GetProizvoditel_postavshikRows" msprop:Generator_UserRelationName="FK_Proizvoditel_postavshik_Postavshik" msprop:Generator_ParentPropName="PostavshikRow" msprop:Generator_RelationVarName="relationFK_Proizvoditel_postavshik_Postavshik" msprop:Generator_UserParentTable="Postavshik" />
       <msdata:Relationship name="FK_Proizvoditel_postavshik_Proizvoditel" msdata:parent="Proizvoditel" msdata:child="Proizvoditel_postavshik" msdata:parentkey="ID_tovara" msdata:childkey="ID_tovara" msprop:Generator_UserChildTable="Proizvoditel_postavshik" msprop:Generator_ChildPropName="GetProizvoditel_postavshikRows" msprop:Generator_UserRelationName="FK_Proizvoditel_postavshik_Proizvoditel" msprop:Generator_ParentPropName="ProizvoditelRow" msprop:Generator_RelationVarName="relationFK_Proizvoditel_postavshik_Proizvoditel" msprop:Generator_UserParentTable="Proizvoditel" />
+      <msdata:Relationship name="FK_Proizvoditel_postavshik_Postavshik" msdata:parent="Postavshik" msdata:child="Proizvoditel_postavshik" msdata:parentkey="ID_postavshika" msdata:childkey="ID_postavshika" msprop:Generator_UserChildTable="Proizvoditel_postavshik" msprop:Generator_ChildPropName="GetProizvoditel_postavshikRows" msprop:Generator_UserRelationName="FK_Proizvoditel_postavshik_Postavshik" msprop:Generator_ParentPropName="PostavshikRow" msprop:Generator_RelationVarName="relationFK_Proizvoditel_postavshik_Postavshik" msprop:Generator_UserParentTable="Postavshik" />
       <msdata:Relationship name="FK_Proizvoditel_Proizvoditel_sport_tovary" msdata:parent="Proizvoditel_sport_tovary" msdata:child="Proizvoditel" msdata:parentkey="ID_tovara" msdata:childkey="ID_tovara" msprop:Generator_UserChildTable="Proizvoditel" msprop:Generator_ChildPropName="GetProizvoditelRows" msprop:Generator_UserRelationName="FK_Proizvoditel_Proizvoditel_sport_tovary" msprop:Generator_RelationVarName="relationFK_Proizvoditel_Proizvoditel_sport_tovary" msprop:Generator_UserParentTable="Proizvoditel_sport_tovary" msprop:Generator_ParentPropName="Proizvoditel_sport_tovaryRow" />
-      <msdata:Relationship name="FK_Prodaga_sport_tovary_Sport_tovary" msdata:parent="Sport_tovary" msdata:child="Prodaga_sport_tovary" msdata:parentkey="ID_tovara" msdata:childkey="ID_tovara" msprop:Generator_UserChildTable="Prodaga_sport_tovary" msprop:Generator_ChildPropName="GetProdaga_sport_tovaryRows" msprop:Generator_UserRelationName="FK_Prodaga_sport_tovary_Sport_tovary" msprop:Generator_RelationVarName="relationFK_Prodaga_sport_tovary_Sport_tovary" msprop:Generator_UserParentTable="Sport_tovary" msprop:Generator_ParentPropName="Sport_tovaryRow" />
-      <msdata:Relationship name="FK_Sport_tovary_Proizvoditel" msdata:parent="Proizvoditel" msdata:child="Sport_tovary" msdata:parentkey="ID_tovara" msdata:childkey="ID_tovara" msprop:Generator_UserChildTable="Sport_tovary" msprop:Generator_ChildPropName="GetSport_tovaryRows" msprop:Generator_UserRelationName="FK_Sport_tovary_Proizvoditel" msprop:Generator_ParentPropName="ProizvoditelRow" msprop:Generator_RelationVarName="relationFK_Sport_tovary_Proizvoditel" msprop:Generator_UserParentTable="Proizvoditel" />
       <msdata:Relationship name="FK_Sport_tovary_Proizvoditel_sport_tovary" msdata:parent="Proizvoditel_sport_tovary" msdata:child="Sport_tovary" msdata:parentkey="ID_tovara" msdata:childkey="ID_tovara" msprop:Generator_UserChildTable="Sport_tovary" msprop:Generator_ChildPropName="GetSport_tovaryRows" msprop:Generator_UserRelationName="FK_Sport_tovary_Proizvoditel_sport_tovary" msprop:Generator_ParentPropName="Proizvoditel_sport_tovaryRow" msprop:Generator_RelationVarName="relationFK_Sport_tovary_Proizvoditel_sport_tovary" msprop:Generator_UserParentTable="Proizvoditel_sport_tovary" />
-      <msdata:Relationship name="FK_Storage_Sport_tovary" msdata:parent="Sport_tovary" msdata:child="Storage" msdata:parentkey="ID_tovara" msdata:childkey="ID_tovara" msprop:Generator_UserChildTable="Storage" msprop:Generator_ChildPropName="GetStorageRows" msprop:Generator_UserRelationName="FK_Storage_Sport_tovary" msprop:Generator_ParentPropName="Sport_tovaryRow" msprop:Generator_RelationVarName="relationFK_Storage_Sport_tovary" msprop:Generator_UserParentTable="Sport_tovary" />
-      <msdata:Relationship name="FK_Postavshik_zakypka_Zakypka" msdata:parent="Zakypka" msdata:child="Postavshik_zakypka" msdata:parentkey="Nomer_zakypki" msdata:childkey="Nomer_zakypki" msprop:Generator_UserChildTable="Postavshik_zakypka" msprop:Generator_ChildPropName="GetPostavshik_zakypkaRows" msprop:Generator_UserRelationName="FK_Postavshik_zakypka_Zakypka" msprop:Generator_RelationVarName="relationFK_Postavshik_zakypka_Zakypka" msprop:Generator_UserParentTable="Zakypka" msprop:Generator_ParentPropName="ZakypkaRow" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

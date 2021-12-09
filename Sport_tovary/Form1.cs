@@ -19,14 +19,7 @@ namespace Sport_tovary
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "dataBase.Proizvoditel_sport_tovary". При необходимости она может быть перемещена или удалена.
-            this.proizvoditel_sport_tovaryTableAdapter.Fill(this.dataBase.Proizvoditel_sport_tovary);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "dataBase.Proizvoditel_postavshik". При необходимости она может быть перемещена или удалена.
-            this.proizvoditel_postavshikTableAdapter.Fill(this.dataBase.Proizvoditel_postavshik);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "dataBase.Prodaga_sport_tovary". При необходимости она может быть перемещена или удалена.
-            this.prodaga_sport_tovaryTableAdapter.Fill(this.dataBase.Prodaga_sport_tovary);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "dataBase.Postavshik_zakypka". При необходимости она может быть перемещена или удалена.
-            this.postavshik_zakypkaTableAdapter.Fill(this.dataBase.Postavshik_zakypka);
+           
             // TODO: данная строка кода позволяет загрузить данные в таблицу "dataBase.Zakypka". При необходимости она может быть перемещена или удалена.
             this.zakypkaTableAdapter.Fill(this.dataBase.Zakypka);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "dataBase.Storage". При необходимости она может быть перемещена или удалена.
@@ -153,48 +146,5 @@ namespace Sport_tovary
             zakypkaTableAdapter.Update(dataBase);
         }
 
-        private void button17_Click(object sender, EventArgs e)
-        {
-            prodaga_sport_tovaryBindingSource.AddNew();
-        }
-
-        private void button18_Click(object sender, EventArgs e)
-        {
-            prodaga_sport_tovaryBindingSource.EndEdit();
-            prodaga_sport_tovaryTableAdapter.Update(dataBase);
-        }
-
-        private void button19_Click(object sender, EventArgs e)
-        {
-            proizvoditel_postavshikBindingSource.AddNew();
-        }
-
-        private void button20_Click(object sender, EventArgs e)
-        {
-            proizvoditel_postavshikBindingSource.EndEdit();
-            proizvoditel_postavshikTableAdapter.Update(dataBase);
-        }
-
-        private void button21_Click(object sender, EventArgs e)
-        {
-            proizvoditel_sport_tovaryBindingSource.AddNew();
-        }
-
-        private void button22_Click(object sender, EventArgs e)
-        {
-            proizvoditel_sport_tovaryBindingSource.EndEdit();
-            proizvoditel_sport_tovaryTableAdapter.Update(dataBase);
-        }
-
-        private void button15_Click(object sender, EventArgs e)
-        {
-            postavshik_zakypkaBindingSource.AddNew();
-        }
-
-        private void button16_Click(object sender, EventArgs e)
-        {
-            postavshik_zakypkaBindingSource.EndEdit();
-            postavshik_zakypkaTableAdapter.Update(dataBase);
-        }
     }
 }

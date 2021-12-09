@@ -76,13 +76,6 @@ namespace Sport_tovary
             this.ulitsaLabel1 = new System.Windows.Forms.Label();
             this.gorodLabel1 = new System.Windows.Forms.Label();
             this.name_proizvoditelLabel = new System.Windows.Forms.Label();
-            this.dataBase = new Sport_tovary.DataBase();
-            this.postavshikBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.postavshikTableAdapter = new Sport_tovary.DataBaseTableAdapters.PostavshikTableAdapter();
-            this.tableAdapterManager = new Sport_tovary.DataBaseTableAdapters.TableAdapterManager();
-            this.postavshik_zakypkaTableAdapter = new Sport_tovary.DataBaseTableAdapters.Postavshik_zakypkaTableAdapter();
-            this.prodaga_sport_tovaryTableAdapter = new Sport_tovary.DataBaseTableAdapters.Prodaga_sport_tovaryTableAdapter();
-            this.prodagaTableAdapter = new Sport_tovary.DataBaseTableAdapters.ProdagaTableAdapter();
             this.postavshikDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -92,6 +85,8 @@ namespace Sport_tovary
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.postavshikBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataBase = new Sport_tovary.DataBase();
             this.iD_postavshikaTextBox = new System.Windows.Forms.TextBox();
             this.name_postavshikaTextBox = new System.Windows.Forms.TextBox();
             this.kontaktniy_nomerTextBox = new System.Windows.Forms.TextBox();
@@ -278,16 +273,13 @@ namespace Sport_tovary
             this.dataGridViewTextBoxColumn43 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn44 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn45 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.postavshik_zakypkaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.prodaga_sport_tovaryBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.proizvoditel_postavshikBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.proizvoditel_sport_tovaryBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.postavshikTableAdapter = new Sport_tovary.DataBaseTableAdapters.PostavshikTableAdapter();
+            this.tableAdapterManager = new Sport_tovary.DataBaseTableAdapters.TableAdapterManager();
+            this.prodagaTableAdapter = new Sport_tovary.DataBaseTableAdapters.ProdagaTableAdapter();
             this.proizvoditelTableAdapter = new Sport_tovary.DataBaseTableAdapters.ProizvoditelTableAdapter();
             this.sport_tovaryTableAdapter = new Sport_tovary.DataBaseTableAdapters.Sport_tovaryTableAdapter();
             this.storageTableAdapter = new Sport_tovary.DataBaseTableAdapters.StorageTableAdapter();
             this.zakypkaTableAdapter = new Sport_tovary.DataBaseTableAdapters.ZakypkaTableAdapter();
-            this.proizvoditel_postavshikTableAdapter = new Sport_tovary.DataBaseTableAdapters.Proizvoditel_postavshikTableAdapter();
-            this.proizvoditel_sport_tovaryTableAdapter = new Sport_tovary.DataBaseTableAdapters.Proizvoditel_sport_tovaryTableAdapter();
             iD_tovaraLabel1 = new System.Windows.Forms.Label();
             name_tovaraLabel2 = new System.Windows.Forms.Label();
             materialLabel = new System.Windows.Forms.Label();
@@ -302,9 +294,9 @@ namespace Sport_tovary
             name_postavshikaLabel1 = new System.Windows.Forms.Label();
             sposob_dostavkiLabel1 = new System.Windows.Forms.Label();
             price_zakypkiLabel1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataBase)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.postavshikBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.postavshikDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.postavshikBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataBase)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.Postavshik.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
@@ -335,10 +327,6 @@ namespace Sport_tovary
             this.bindingNavigator6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.zakypkaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.zakypkaDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.postavshik_zakypkaBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prodaga_sport_tovaryBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proizvoditel_postavshikBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proizvoditel_sport_tovaryBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // iD_tovaraLabel1
@@ -746,48 +734,6 @@ namespace Sport_tovary
             this.name_proizvoditelLabel.TabIndex = 17;
             this.name_proizvoditelLabel.Text = "Name proizvoditel:";
             // 
-            // dataBase
-            // 
-            this.dataBase.DataSetName = "DataBase";
-            this.dataBase.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // postavshikBindingSource
-            // 
-            this.postavshikBindingSource.DataMember = "Postavshik";
-            this.postavshikBindingSource.DataSource = this.dataBase;
-            this.postavshikBindingSource.CurrentChanged += new System.EventHandler(this.postavshikBindingSource_CurrentChanged);
-            // 
-            // postavshikTableAdapter
-            // 
-            this.postavshikTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.Postavshik_zakypkaTableAdapter = this.postavshik_zakypkaTableAdapter;
-            this.tableAdapterManager.PostavshikTableAdapter = this.postavshikTableAdapter;
-            this.tableAdapterManager.Prodaga_sport_tovaryTableAdapter = this.prodaga_sport_tovaryTableAdapter;
-            this.tableAdapterManager.ProdagaTableAdapter = this.prodagaTableAdapter;
-            this.tableAdapterManager.Proizvoditel_postavshikTableAdapter = null;
-            this.tableAdapterManager.Proizvoditel_sport_tovaryTableAdapter = null;
-            this.tableAdapterManager.ProizvoditelTableAdapter = null;
-            this.tableAdapterManager.Sport_tovaryTableAdapter = null;
-            this.tableAdapterManager.StorageTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = Sport_tovary.DataBaseTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            this.tableAdapterManager.ZakypkaTableAdapter = null;
-            // 
-            // postavshik_zakypkaTableAdapter
-            // 
-            this.postavshik_zakypkaTableAdapter.ClearBeforeFill = true;
-            // 
-            // prodaga_sport_tovaryTableAdapter
-            // 
-            this.prodaga_sport_tovaryTableAdapter.ClearBeforeFill = true;
-            // 
-            // prodagaTableAdapter
-            // 
-            this.prodagaTableAdapter.ClearBeforeFill = true;
-            // 
             // postavshikDataGridView
             // 
             this.postavshikDataGridView.AutoGenerateColumns = false;
@@ -854,6 +800,17 @@ namespace Sport_tovary
             this.dataGridViewTextBoxColumn8.DataPropertyName = "Gorod";
             this.dataGridViewTextBoxColumn8.HeaderText = "Gorod";
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
+            // postavshikBindingSource
+            // 
+            this.postavshikBindingSource.DataMember = "Postavshik";
+            this.postavshikBindingSource.DataSource = this.dataBase;
+            this.postavshikBindingSource.CurrentChanged += new System.EventHandler(this.postavshikBindingSource_CurrentChanged);
+            // 
+            // dataBase
+            // 
+            this.dataBase.DataSetName = "DataBase";
+            this.dataBase.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // iD_postavshikaTextBox
             // 
@@ -2567,25 +2524,27 @@ namespace Sport_tovary
             this.dataGridViewTextBoxColumn45.HeaderText = "Price_zakypki";
             this.dataGridViewTextBoxColumn45.Name = "dataGridViewTextBoxColumn45";
             // 
-            // postavshik_zakypkaBindingSource
+            // postavshikTableAdapter
             // 
-            this.postavshik_zakypkaBindingSource.DataMember = "Postavshik_zakypka";
-            this.postavshik_zakypkaBindingSource.DataSource = this.dataBase;
+            this.postavshikTableAdapter.ClearBeforeFill = true;
             // 
-            // prodaga_sport_tovaryBindingSource
+            // tableAdapterManager
             // 
-            this.prodaga_sport_tovaryBindingSource.DataMember = "Prodaga_sport_tovary";
-            this.prodaga_sport_tovaryBindingSource.DataSource = this.dataBase;
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.Postavshik_zakypkaTableAdapter = null;
+            this.tableAdapterManager.PostavshikTableAdapter = this.postavshikTableAdapter;
+            this.tableAdapterManager.Prodaga_sport_tovaryTableAdapter = null;
+            this.tableAdapterManager.ProdagaTableAdapter = this.prodagaTableAdapter;
+          
+            this.tableAdapterManager.ProizvoditelTableAdapter = null;
+            this.tableAdapterManager.Sport_tovaryTableAdapter = null;
+            this.tableAdapterManager.StorageTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = Sport_tovary.DataBaseTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.ZakypkaTableAdapter = null;
             // 
-            // proizvoditel_postavshikBindingSource
+            // prodagaTableAdapter
             // 
-            this.proizvoditel_postavshikBindingSource.DataMember = "Proizvoditel_postavshik";
-            this.proizvoditel_postavshikBindingSource.DataSource = this.dataBase;
-            // 
-            // proizvoditel_sport_tovaryBindingSource
-            // 
-            this.proizvoditel_sport_tovaryBindingSource.DataMember = "Proizvoditel_sport_tovary";
-            this.proizvoditel_sport_tovaryBindingSource.DataSource = this.dataBase;
+            this.prodagaTableAdapter.ClearBeforeFill = true;
             // 
             // proizvoditelTableAdapter
             // 
@@ -2602,14 +2561,6 @@ namespace Sport_tovary
             // zakypkaTableAdapter
             // 
             this.zakypkaTableAdapter.ClearBeforeFill = true;
-            // 
-            // proizvoditel_postavshikTableAdapter
-            // 
-            this.proizvoditel_postavshikTableAdapter.ClearBeforeFill = true;
-            // 
-            // proizvoditel_sport_tovaryTableAdapter
-            // 
-            this.proizvoditel_sport_tovaryTableAdapter.ClearBeforeFill = true;
             // 
             // Form1
             // 
@@ -2639,9 +2590,9 @@ namespace Sport_tovary
             this.Name = "Form1";
             this.Text = "Спортивные товары";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataBase)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.postavshikBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.postavshikDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.postavshikBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataBase)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.Postavshik.ResumeLayout(false);
             this.Postavshik.PerformLayout();
@@ -2684,10 +2635,6 @@ namespace Sport_tovary
             this.bindingNavigator6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.zakypkaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.zakypkaDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.postavshik_zakypkaBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prodaga_sport_tovaryBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proizvoditel_postavshikBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proizvoditel_sport_tovaryBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2858,14 +2805,6 @@ namespace Sport_tovary
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn43;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn44;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn45;
-        private System.Windows.Forms.BindingSource postavshik_zakypkaBindingSource;
-        private DataBaseTableAdapters.Postavshik_zakypkaTableAdapter postavshik_zakypkaTableAdapter;
-        private System.Windows.Forms.BindingSource prodaga_sport_tovaryBindingSource;
-        private DataBaseTableAdapters.Prodaga_sport_tovaryTableAdapter prodaga_sport_tovaryTableAdapter;
-        private System.Windows.Forms.BindingSource proizvoditel_postavshikBindingSource;
-        private DataBaseTableAdapters.Proizvoditel_postavshikTableAdapter proizvoditel_postavshikTableAdapter;
-        private System.Windows.Forms.BindingSource proizvoditel_sport_tovaryBindingSource;
-        private DataBaseTableAdapters.Proizvoditel_sport_tovaryTableAdapter proizvoditel_sport_tovaryTableAdapter;
         private System.Windows.Forms.BindingNavigator bindingNavigator1;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
