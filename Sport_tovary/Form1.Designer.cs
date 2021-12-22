@@ -77,16 +77,6 @@ namespace Sport_tovary
             this.gorodLabel1 = new System.Windows.Forms.Label();
             this.name_proizvoditelLabel = new System.Windows.Forms.Label();
             this.postavshikDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.postavshikBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataBase = new Sport_tovary.DataBase();
             this.iD_postavshikaTextBox = new System.Windows.Forms.TextBox();
             this.name_postavshikaTextBox = new System.Windows.Forms.TextBox();
             this.kontaktniy_nomerTextBox = new System.Windows.Forms.TextBox();
@@ -122,18 +112,9 @@ namespace Sport_tovary
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Prodaga = new System.Windows.Forms.TabPage();
             this.bindingNavigator2 = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem1 = new System.Windows.Forms.ToolStripButton();
-            this.prodagaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bindingNavigatorCountItem1 = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem1 = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem1 = new System.Windows.Forms.ToolStripButton();
@@ -153,16 +134,9 @@ namespace Sport_tovary
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.prodagaDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Proizvoditel = new System.Windows.Forms.TabPage();
             this.bindingNavigator3 = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem2 = new System.Windows.Forms.ToolStripButton();
-            this.proizvoditelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bindingNavigatorCountItem2 = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem2 = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem2 = new System.Windows.Forms.ToolStripButton();
@@ -185,19 +159,9 @@ namespace Sport_tovary
             this.gorodTextBox1 = new System.Windows.Forms.TextBox();
             this.name_proizvoditelTextBox = new System.Windows.Forms.TextBox();
             this.proizvoditelDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Sportivnie_tovary = new System.Windows.Forms.TabPage();
             this.bindingNavigator4 = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem3 = new System.Windows.Forms.ToolStripButton();
-            this.sport_tovaryBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bindingNavigatorCountItem3 = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem3 = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem3 = new System.Windows.Forms.ToolStripButton();
@@ -216,15 +180,9 @@ namespace Sport_tovary
             this.button10 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.sport_tovaryDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn36 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Storage = new System.Windows.Forms.TabPage();
             this.bindingNavigator5 = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem4 = new System.Windows.Forms.ToolStripButton();
-            this.storageBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bindingNavigatorCountItem4 = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem4 = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem4 = new System.Windows.Forms.ToolStripButton();
@@ -243,15 +201,9 @@ namespace Sport_tovary
             this.price_prodagyTextBox1 = new System.Windows.Forms.TextBox();
             this.kolichestvo_tovarovTextBox = new System.Windows.Forms.TextBox();
             this.storageDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn37 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn38 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn39 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn40 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn41 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Zakypka = new System.Windows.Forms.TabPage();
             this.bindingNavigator6 = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem5 = new System.Windows.Forms.ToolStripButton();
-            this.zakypkaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bindingNavigatorCountItem5 = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem5 = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem5 = new System.Windows.Forms.ToolStripButton();
@@ -269,10 +221,58 @@ namespace Sport_tovary
             this.sposob_dostavkiTextBox1 = new System.Windows.Forms.TextBox();
             this.price_zakypkiTextBox1 = new System.Windows.Forms.TextBox();
             this.zakypkaDataGridView = new System.Windows.Forms.DataGridView();
+            this.postavshikBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataBase = new Sport_tovary.DataBase();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prodagaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.proizvoditelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sport_tovaryBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridViewTextBoxColumn32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn36 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.storageBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridViewTextBoxColumn37 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn38 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn39 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn40 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn41 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.zakypkaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewTextBoxColumn42 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn43 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn44 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn45 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.postavshikTableAdapter = new Sport_tovary.DataBaseTableAdapters.PostavshikTableAdapter();
             this.tableAdapterManager = new Sport_tovary.DataBaseTableAdapters.TableAdapterManager();
             this.prodagaTableAdapter = new Sport_tovary.DataBaseTableAdapters.ProdagaTableAdapter();
@@ -295,8 +295,6 @@ namespace Sport_tovary
             sposob_dostavkiLabel1 = new System.Windows.Forms.Label();
             price_zakypkiLabel1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.postavshikDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.postavshikBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataBase)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.Postavshik.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
@@ -305,28 +303,30 @@ namespace Sport_tovary
             this.Prodaga.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator2)).BeginInit();
             this.bindingNavigator2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.prodagaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.prodagaDataGridView)).BeginInit();
             this.Proizvoditel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator3)).BeginInit();
             this.bindingNavigator3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.proizvoditelBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proizvoditelDataGridView)).BeginInit();
             this.Sportivnie_tovary.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator4)).BeginInit();
             this.bindingNavigator4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sport_tovaryBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sport_tovaryDataGridView)).BeginInit();
             this.Storage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator5)).BeginInit();
             this.bindingNavigator5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.storageBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.storageDataGridView)).BeginInit();
             this.Zakypka.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator6)).BeginInit();
             this.bindingNavigator6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.zakypkaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.zakypkaDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.postavshikBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataBase)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prodagaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proizvoditelBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sport_tovaryBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.storageBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zakypkaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // iD_tovaraLabel1
@@ -753,65 +753,6 @@ namespace Sport_tovary
             this.postavshikDataGridView.Size = new System.Drawing.Size(855, 162);
             this.postavshikDataGridView.TabIndex = 1;
             // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "ID_postavshika";
-            this.dataGridViewTextBoxColumn1.HeaderText = "ID_postavshika";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Name_postavshika";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Name_postavshika";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Kontaktniy_nomer";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Kontaktniy_nomer";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Kontaktnoe_litso";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Kontaktnoe_litso";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Strana";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Strana";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Dom";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Dom";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "Ulitsa";
-            this.dataGridViewTextBoxColumn7.HeaderText = "Ulitsa";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "Gorod";
-            this.dataGridViewTextBoxColumn8.HeaderText = "Gorod";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            // 
-            // postavshikBindingSource
-            // 
-            this.postavshikBindingSource.DataMember = "Postavshik";
-            this.postavshikBindingSource.DataSource = this.dataBase;
-            this.postavshikBindingSource.CurrentChanged += new System.EventHandler(this.postavshikBindingSource_CurrentChanged);
-            // 
-            // dataBase
-            // 
-            this.dataBase.DataSetName = "DataBase";
-            this.dataBase.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // iD_postavshikaTextBox
             // 
             this.iD_postavshikaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.postavshikBindingSource, "ID_postavshika", true));
@@ -1159,54 +1100,6 @@ namespace Sport_tovary
             this.dataGridView1.Size = new System.Drawing.Size(855, 162);
             this.dataGridView1.TabIndex = 20;
             // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "ID_postavshika";
-            this.dataGridViewTextBoxColumn9.HeaderText = "ID_postavshika";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "Name_postavshika";
-            this.dataGridViewTextBoxColumn10.HeaderText = "Name_postavshika";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.DataPropertyName = "Kontaktniy_nomer";
-            this.dataGridViewTextBoxColumn11.HeaderText = "Kontaktniy_nomer";
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            // 
-            // dataGridViewTextBoxColumn12
-            // 
-            this.dataGridViewTextBoxColumn12.DataPropertyName = "Kontaktnoe_litso";
-            this.dataGridViewTextBoxColumn12.HeaderText = "Kontaktnoe_litso";
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            // 
-            // dataGridViewTextBoxColumn13
-            // 
-            this.dataGridViewTextBoxColumn13.DataPropertyName = "Strana";
-            this.dataGridViewTextBoxColumn13.HeaderText = "Strana";
-            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
-            // 
-            // dataGridViewTextBoxColumn14
-            // 
-            this.dataGridViewTextBoxColumn14.DataPropertyName = "Dom";
-            this.dataGridViewTextBoxColumn14.HeaderText = "Dom";
-            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
-            // 
-            // dataGridViewTextBoxColumn15
-            // 
-            this.dataGridViewTextBoxColumn15.DataPropertyName = "Ulitsa";
-            this.dataGridViewTextBoxColumn15.HeaderText = "Ulitsa";
-            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
-            // 
-            // dataGridViewTextBoxColumn16
-            // 
-            this.dataGridViewTextBoxColumn16.DataPropertyName = "Gorod";
-            this.dataGridViewTextBoxColumn16.HeaderText = "Gorod";
-            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
-            // 
             // Prodaga
             // 
             this.Prodaga.AutoScroll = true;
@@ -1271,12 +1164,6 @@ namespace Sport_tovary
             this.bindingNavigatorAddNewItem1.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorAddNewItem1.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorAddNewItem1.Text = "Добавить";
-            // 
-            // prodagaBindingSource
-            // 
-            this.prodagaBindingSource.DataMember = "Prodaga";
-            this.prodagaBindingSource.DataSource = this.dataBase;
-            this.prodagaBindingSource.CurrentChanged += new System.EventHandler(this.prodagaBindingSource_CurrentChanged);
             // 
             // bindingNavigatorCountItem1
             // 
@@ -1440,42 +1327,6 @@ namespace Sport_tovary
             this.prodagaDataGridView.Size = new System.Drawing.Size(651, 208);
             this.prodagaDataGridView.TabIndex = 0;
             // 
-            // dataGridViewTextBoxColumn17
-            // 
-            this.dataGridViewTextBoxColumn17.DataPropertyName = "Nomer_prodagy";
-            this.dataGridViewTextBoxColumn17.HeaderText = "Nomer_prodagy";
-            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
-            // 
-            // dataGridViewTextBoxColumn18
-            // 
-            this.dataGridViewTextBoxColumn18.DataPropertyName = "Name_tovara";
-            this.dataGridViewTextBoxColumn18.HeaderText = "Name_tovara";
-            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
-            // 
-            // dataGridViewTextBoxColumn19
-            // 
-            this.dataGridViewTextBoxColumn19.DataPropertyName = "Sposob_dostavki";
-            this.dataGridViewTextBoxColumn19.HeaderText = "Sposob_dostavki";
-            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
-            // 
-            // dataGridViewTextBoxColumn20
-            // 
-            this.dataGridViewTextBoxColumn20.DataPropertyName = "Kolichestvo_prodavaemyh_edinits";
-            this.dataGridViewTextBoxColumn20.HeaderText = "Kolichestvo_prodavaemyh_edinits";
-            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
-            // 
-            // dataGridViewTextBoxColumn21
-            // 
-            this.dataGridViewTextBoxColumn21.DataPropertyName = "Price_prodagy";
-            this.dataGridViewTextBoxColumn21.HeaderText = "Price_prodagy";
-            this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
-            // 
-            // dataGridViewTextBoxColumn22
-            // 
-            this.dataGridViewTextBoxColumn22.DataPropertyName = "Name_store";
-            this.dataGridViewTextBoxColumn22.HeaderText = "Name_store";
-            this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
-            // 
             // Proizvoditel
             // 
             this.Proizvoditel.Controls.Add(this.bindingNavigator3);
@@ -1544,12 +1395,6 @@ namespace Sport_tovary
             this.bindingNavigatorAddNewItem2.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorAddNewItem2.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorAddNewItem2.Text = "Добавить";
-            // 
-            // proizvoditelBindingSource
-            // 
-            this.proizvoditelBindingSource.DataMember = "Proizvoditel";
-            this.proizvoditelBindingSource.DataSource = this.dataBase;
-            this.proizvoditelBindingSource.CurrentChanged += new System.EventHandler(this.proizvoditelBindingSource_CurrentChanged);
             // 
             // bindingNavigatorCountItem2
             // 
@@ -1740,60 +1585,6 @@ namespace Sport_tovary
             this.proizvoditelDataGridView.Size = new System.Drawing.Size(949, 220);
             this.proizvoditelDataGridView.TabIndex = 0;
             // 
-            // dataGridViewTextBoxColumn23
-            // 
-            this.dataGridViewTextBoxColumn23.DataPropertyName = "ID_tovara";
-            this.dataGridViewTextBoxColumn23.HeaderText = "ID_tovara";
-            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
-            // 
-            // dataGridViewTextBoxColumn24
-            // 
-            this.dataGridViewTextBoxColumn24.DataPropertyName = "Kontaktniy_nomer";
-            this.dataGridViewTextBoxColumn24.HeaderText = "Kontaktniy_nomer";
-            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
-            // 
-            // dataGridViewTextBoxColumn25
-            // 
-            this.dataGridViewTextBoxColumn25.DataPropertyName = "Kontaktnoe_litso";
-            this.dataGridViewTextBoxColumn25.HeaderText = "Kontaktnoe_litso";
-            this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
-            // 
-            // dataGridViewTextBoxColumn26
-            // 
-            this.dataGridViewTextBoxColumn26.DataPropertyName = "Name_tovara";
-            this.dataGridViewTextBoxColumn26.HeaderText = "Name_tovara";
-            this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
-            // 
-            // dataGridViewTextBoxColumn27
-            // 
-            this.dataGridViewTextBoxColumn27.DataPropertyName = "Strana";
-            this.dataGridViewTextBoxColumn27.HeaderText = "Strana";
-            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
-            // 
-            // dataGridViewTextBoxColumn28
-            // 
-            this.dataGridViewTextBoxColumn28.DataPropertyName = "Dom";
-            this.dataGridViewTextBoxColumn28.HeaderText = "Dom";
-            this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
-            // 
-            // dataGridViewTextBoxColumn29
-            // 
-            this.dataGridViewTextBoxColumn29.DataPropertyName = "Ulitsa";
-            this.dataGridViewTextBoxColumn29.HeaderText = "Ulitsa";
-            this.dataGridViewTextBoxColumn29.Name = "dataGridViewTextBoxColumn29";
-            // 
-            // dataGridViewTextBoxColumn30
-            // 
-            this.dataGridViewTextBoxColumn30.DataPropertyName = "Gorod";
-            this.dataGridViewTextBoxColumn30.HeaderText = "Gorod";
-            this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
-            // 
-            // dataGridViewTextBoxColumn31
-            // 
-            this.dataGridViewTextBoxColumn31.DataPropertyName = "Name_proizvoditel";
-            this.dataGridViewTextBoxColumn31.HeaderText = "Name_proizvoditel";
-            this.dataGridViewTextBoxColumn31.Name = "dataGridViewTextBoxColumn31";
-            // 
             // Sportivnie_tovary
             // 
             this.Sportivnie_tovary.Controls.Add(this.bindingNavigator4);
@@ -1854,11 +1645,6 @@ namespace Sport_tovary
             this.bindingNavigatorAddNewItem3.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorAddNewItem3.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorAddNewItem3.Text = "Добавить";
-            // 
-            // sport_tovaryBindingSource
-            // 
-            this.sport_tovaryBindingSource.DataMember = "Sport_tovary";
-            this.sport_tovaryBindingSource.DataSource = this.dataBase;
             // 
             // bindingNavigatorCountItem3
             // 
@@ -2013,36 +1799,6 @@ namespace Sport_tovary
             this.sport_tovaryDataGridView.Size = new System.Drawing.Size(546, 198);
             this.sport_tovaryDataGridView.TabIndex = 0;
             // 
-            // dataGridViewTextBoxColumn32
-            // 
-            this.dataGridViewTextBoxColumn32.DataPropertyName = "ID_tovara";
-            this.dataGridViewTextBoxColumn32.HeaderText = "ID_tovara";
-            this.dataGridViewTextBoxColumn32.Name = "dataGridViewTextBoxColumn32";
-            // 
-            // dataGridViewTextBoxColumn33
-            // 
-            this.dataGridViewTextBoxColumn33.DataPropertyName = "Name_tovara";
-            this.dataGridViewTextBoxColumn33.HeaderText = "Name_tovara";
-            this.dataGridViewTextBoxColumn33.Name = "dataGridViewTextBoxColumn33";
-            // 
-            // dataGridViewTextBoxColumn34
-            // 
-            this.dataGridViewTextBoxColumn34.DataPropertyName = "Material";
-            this.dataGridViewTextBoxColumn34.HeaderText = "Material";
-            this.dataGridViewTextBoxColumn34.Name = "dataGridViewTextBoxColumn34";
-            // 
-            // dataGridViewTextBoxColumn35
-            // 
-            this.dataGridViewTextBoxColumn35.DataPropertyName = "Razmer";
-            this.dataGridViewTextBoxColumn35.HeaderText = "Razmer";
-            this.dataGridViewTextBoxColumn35.Name = "dataGridViewTextBoxColumn35";
-            // 
-            // dataGridViewTextBoxColumn36
-            // 
-            this.dataGridViewTextBoxColumn36.DataPropertyName = "Forma_tovara";
-            this.dataGridViewTextBoxColumn36.HeaderText = "Forma_tovara";
-            this.dataGridViewTextBoxColumn36.Name = "dataGridViewTextBoxColumn36";
-            // 
             // Storage
             // 
             this.Storage.Controls.Add(this.bindingNavigator5);
@@ -2103,11 +1859,6 @@ namespace Sport_tovary
             this.bindingNavigatorAddNewItem4.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorAddNewItem4.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorAddNewItem4.Text = "Добавить";
-            // 
-            // storageBindingSource
-            // 
-            this.storageBindingSource.DataMember = "Storage";
-            this.storageBindingSource.DataSource = this.dataBase;
             // 
             // bindingNavigatorCountItem4
             // 
@@ -2262,36 +2013,6 @@ namespace Sport_tovary
             this.storageDataGridView.Size = new System.Drawing.Size(546, 220);
             this.storageDataGridView.TabIndex = 0;
             // 
-            // dataGridViewTextBoxColumn37
-            // 
-            this.dataGridViewTextBoxColumn37.DataPropertyName = "ID_tovara";
-            this.dataGridViewTextBoxColumn37.HeaderText = "ID_tovara";
-            this.dataGridViewTextBoxColumn37.Name = "dataGridViewTextBoxColumn37";
-            // 
-            // dataGridViewTextBoxColumn38
-            // 
-            this.dataGridViewTextBoxColumn38.DataPropertyName = "Sylka_na_tovar";
-            this.dataGridViewTextBoxColumn38.HeaderText = "Sylka_na_tovar";
-            this.dataGridViewTextBoxColumn38.Name = "dataGridViewTextBoxColumn38";
-            // 
-            // dataGridViewTextBoxColumn39
-            // 
-            this.dataGridViewTextBoxColumn39.DataPropertyName = "Price_zakypki";
-            this.dataGridViewTextBoxColumn39.HeaderText = "Price_zakypki";
-            this.dataGridViewTextBoxColumn39.Name = "dataGridViewTextBoxColumn39";
-            // 
-            // dataGridViewTextBoxColumn40
-            // 
-            this.dataGridViewTextBoxColumn40.DataPropertyName = "Price_prodagy";
-            this.dataGridViewTextBoxColumn40.HeaderText = "Price_prodagy";
-            this.dataGridViewTextBoxColumn40.Name = "dataGridViewTextBoxColumn40";
-            // 
-            // dataGridViewTextBoxColumn41
-            // 
-            this.dataGridViewTextBoxColumn41.DataPropertyName = "Kolichestvo_tovarov";
-            this.dataGridViewTextBoxColumn41.HeaderText = "Kolichestvo_tovarov";
-            this.dataGridViewTextBoxColumn41.Name = "dataGridViewTextBoxColumn41";
-            // 
             // Zakypka
             // 
             this.Zakypka.Controls.Add(this.bindingNavigator6);
@@ -2350,11 +2071,6 @@ namespace Sport_tovary
             this.bindingNavigatorAddNewItem5.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorAddNewItem5.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorAddNewItem5.Text = "Добавить";
-            // 
-            // zakypkaBindingSource
-            // 
-            this.zakypkaBindingSource.DataMember = "Zakypka";
-            this.zakypkaBindingSource.DataSource = this.dataBase;
             // 
             // bindingNavigatorCountItem5
             // 
@@ -2500,6 +2216,242 @@ namespace Sport_tovary
             this.zakypkaDataGridView.Size = new System.Drawing.Size(446, 220);
             this.zakypkaDataGridView.TabIndex = 0;
             // 
+            // postavshikBindingSource
+            // 
+            this.postavshikBindingSource.DataMember = "Postavshik";
+            this.postavshikBindingSource.DataSource = this.dataBase;
+            this.postavshikBindingSource.CurrentChanged += new System.EventHandler(this.postavshikBindingSource_CurrentChanged);
+            // 
+            // dataBase
+            // 
+            this.dataBase.DataSetName = "DataBase";
+            this.dataBase.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "ID_postavshika";
+            this.dataGridViewTextBoxColumn9.HeaderText = "ID_postavshika";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "Name_postavshika";
+            this.dataGridViewTextBoxColumn10.HeaderText = "Name_postavshika";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "Kontaktniy_nomer";
+            this.dataGridViewTextBoxColumn11.HeaderText = "Kontaktniy_nomer";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "Kontaktnoe_litso";
+            this.dataGridViewTextBoxColumn12.HeaderText = "Kontaktnoe_litso";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.DataPropertyName = "Strana";
+            this.dataGridViewTextBoxColumn13.HeaderText = "Strana";
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            // 
+            // dataGridViewTextBoxColumn14
+            // 
+            this.dataGridViewTextBoxColumn14.DataPropertyName = "Dom";
+            this.dataGridViewTextBoxColumn14.HeaderText = "Dom";
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            // 
+            // dataGridViewTextBoxColumn15
+            // 
+            this.dataGridViewTextBoxColumn15.DataPropertyName = "Ulitsa";
+            this.dataGridViewTextBoxColumn15.HeaderText = "Ulitsa";
+            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            // 
+            // dataGridViewTextBoxColumn16
+            // 
+            this.dataGridViewTextBoxColumn16.DataPropertyName = "Gorod";
+            this.dataGridViewTextBoxColumn16.HeaderText = "Gorod";
+            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            // 
+            // prodagaBindingSource
+            // 
+            this.prodagaBindingSource.DataMember = "Prodaga";
+            this.prodagaBindingSource.DataSource = this.dataBase;
+            this.prodagaBindingSource.CurrentChanged += new System.EventHandler(this.prodagaBindingSource_CurrentChanged);
+            // 
+            // dataGridViewTextBoxColumn17
+            // 
+            this.dataGridViewTextBoxColumn17.DataPropertyName = "Nomer_prodagy";
+            this.dataGridViewTextBoxColumn17.HeaderText = "Nomer_prodagy";
+            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
+            // 
+            // dataGridViewTextBoxColumn18
+            // 
+            this.dataGridViewTextBoxColumn18.DataPropertyName = "Name_tovara";
+            this.dataGridViewTextBoxColumn18.HeaderText = "Name_tovara";
+            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
+            // 
+            // dataGridViewTextBoxColumn19
+            // 
+            this.dataGridViewTextBoxColumn19.DataPropertyName = "Sposob_dostavki";
+            this.dataGridViewTextBoxColumn19.HeaderText = "Sposob_dostavki";
+            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
+            // 
+            // dataGridViewTextBoxColumn20
+            // 
+            this.dataGridViewTextBoxColumn20.DataPropertyName = "Kolichestvo_prodavaemyh_edinits";
+            this.dataGridViewTextBoxColumn20.HeaderText = "Kolichestvo_prodavaemyh_edinits";
+            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
+            // 
+            // dataGridViewTextBoxColumn21
+            // 
+            this.dataGridViewTextBoxColumn21.DataPropertyName = "Price_prodagy";
+            this.dataGridViewTextBoxColumn21.HeaderText = "Price_prodagy";
+            this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
+            // 
+            // dataGridViewTextBoxColumn22
+            // 
+            this.dataGridViewTextBoxColumn22.DataPropertyName = "Name_store";
+            this.dataGridViewTextBoxColumn22.HeaderText = "Name_store";
+            this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
+            // 
+            // proizvoditelBindingSource
+            // 
+            this.proizvoditelBindingSource.DataMember = "Proizvoditel";
+            this.proizvoditelBindingSource.DataSource = this.dataBase;
+            this.proizvoditelBindingSource.CurrentChanged += new System.EventHandler(this.proizvoditelBindingSource_CurrentChanged);
+            // 
+            // dataGridViewTextBoxColumn23
+            // 
+            this.dataGridViewTextBoxColumn23.DataPropertyName = "ID_tovara";
+            this.dataGridViewTextBoxColumn23.HeaderText = "ID_tovara";
+            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
+            // 
+            // dataGridViewTextBoxColumn24
+            // 
+            this.dataGridViewTextBoxColumn24.DataPropertyName = "Kontaktniy_nomer";
+            this.dataGridViewTextBoxColumn24.HeaderText = "Kontaktniy_nomer";
+            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
+            // 
+            // dataGridViewTextBoxColumn25
+            // 
+            this.dataGridViewTextBoxColumn25.DataPropertyName = "Kontaktnoe_litso";
+            this.dataGridViewTextBoxColumn25.HeaderText = "Kontaktnoe_litso";
+            this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
+            // 
+            // dataGridViewTextBoxColumn26
+            // 
+            this.dataGridViewTextBoxColumn26.DataPropertyName = "Name_tovara";
+            this.dataGridViewTextBoxColumn26.HeaderText = "Name_tovara";
+            this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
+            // 
+            // dataGridViewTextBoxColumn27
+            // 
+            this.dataGridViewTextBoxColumn27.DataPropertyName = "Strana";
+            this.dataGridViewTextBoxColumn27.HeaderText = "Strana";
+            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
+            // 
+            // dataGridViewTextBoxColumn28
+            // 
+            this.dataGridViewTextBoxColumn28.DataPropertyName = "Dom";
+            this.dataGridViewTextBoxColumn28.HeaderText = "Dom";
+            this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
+            // 
+            // dataGridViewTextBoxColumn29
+            // 
+            this.dataGridViewTextBoxColumn29.DataPropertyName = "Ulitsa";
+            this.dataGridViewTextBoxColumn29.HeaderText = "Ulitsa";
+            this.dataGridViewTextBoxColumn29.Name = "dataGridViewTextBoxColumn29";
+            // 
+            // dataGridViewTextBoxColumn30
+            // 
+            this.dataGridViewTextBoxColumn30.DataPropertyName = "Gorod";
+            this.dataGridViewTextBoxColumn30.HeaderText = "Gorod";
+            this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
+            // 
+            // dataGridViewTextBoxColumn31
+            // 
+            this.dataGridViewTextBoxColumn31.DataPropertyName = "Name_proizvoditel";
+            this.dataGridViewTextBoxColumn31.HeaderText = "Name_proizvoditel";
+            this.dataGridViewTextBoxColumn31.Name = "dataGridViewTextBoxColumn31";
+            // 
+            // sport_tovaryBindingSource
+            // 
+            this.sport_tovaryBindingSource.DataMember = "Sport_tovary";
+            this.sport_tovaryBindingSource.DataSource = this.dataBase;
+            // 
+            // dataGridViewTextBoxColumn32
+            // 
+            this.dataGridViewTextBoxColumn32.DataPropertyName = "ID_tovara";
+            this.dataGridViewTextBoxColumn32.HeaderText = "ID_tovara";
+            this.dataGridViewTextBoxColumn32.Name = "dataGridViewTextBoxColumn32";
+            // 
+            // dataGridViewTextBoxColumn33
+            // 
+            this.dataGridViewTextBoxColumn33.DataPropertyName = "Name_tovara";
+            this.dataGridViewTextBoxColumn33.HeaderText = "Name_tovara";
+            this.dataGridViewTextBoxColumn33.Name = "dataGridViewTextBoxColumn33";
+            // 
+            // dataGridViewTextBoxColumn34
+            // 
+            this.dataGridViewTextBoxColumn34.DataPropertyName = "Material";
+            this.dataGridViewTextBoxColumn34.HeaderText = "Material";
+            this.dataGridViewTextBoxColumn34.Name = "dataGridViewTextBoxColumn34";
+            // 
+            // dataGridViewTextBoxColumn35
+            // 
+            this.dataGridViewTextBoxColumn35.DataPropertyName = "Razmer";
+            this.dataGridViewTextBoxColumn35.HeaderText = "Razmer";
+            this.dataGridViewTextBoxColumn35.Name = "dataGridViewTextBoxColumn35";
+            // 
+            // dataGridViewTextBoxColumn36
+            // 
+            this.dataGridViewTextBoxColumn36.DataPropertyName = "Forma_tovara";
+            this.dataGridViewTextBoxColumn36.HeaderText = "Forma_tovara";
+            this.dataGridViewTextBoxColumn36.Name = "dataGridViewTextBoxColumn36";
+            // 
+            // storageBindingSource
+            // 
+            this.storageBindingSource.DataMember = "Storage";
+            this.storageBindingSource.DataSource = this.dataBase;
+            // 
+            // dataGridViewTextBoxColumn37
+            // 
+            this.dataGridViewTextBoxColumn37.DataPropertyName = "ID_tovara";
+            this.dataGridViewTextBoxColumn37.HeaderText = "ID_tovara";
+            this.dataGridViewTextBoxColumn37.Name = "dataGridViewTextBoxColumn37";
+            // 
+            // dataGridViewTextBoxColumn38
+            // 
+            this.dataGridViewTextBoxColumn38.DataPropertyName = "Sylka_na_tovar";
+            this.dataGridViewTextBoxColumn38.HeaderText = "Sylka_na_tovar";
+            this.dataGridViewTextBoxColumn38.Name = "dataGridViewTextBoxColumn38";
+            // 
+            // dataGridViewTextBoxColumn39
+            // 
+            this.dataGridViewTextBoxColumn39.DataPropertyName = "Price_zakypki";
+            this.dataGridViewTextBoxColumn39.HeaderText = "Price_zakypki";
+            this.dataGridViewTextBoxColumn39.Name = "dataGridViewTextBoxColumn39";
+            // 
+            // dataGridViewTextBoxColumn40
+            // 
+            this.dataGridViewTextBoxColumn40.DataPropertyName = "Price_prodagy";
+            this.dataGridViewTextBoxColumn40.HeaderText = "Price_prodagy";
+            this.dataGridViewTextBoxColumn40.Name = "dataGridViewTextBoxColumn40";
+            // 
+            // dataGridViewTextBoxColumn41
+            // 
+            this.dataGridViewTextBoxColumn41.DataPropertyName = "Kolichestvo_tovarov";
+            this.dataGridViewTextBoxColumn41.HeaderText = "Kolichestvo_tovarov";
+            this.dataGridViewTextBoxColumn41.Name = "dataGridViewTextBoxColumn41";
+            // 
+            // zakypkaBindingSource
+            // 
+            this.zakypkaBindingSource.DataMember = "Zakypka";
+            this.zakypkaBindingSource.DataSource = this.dataBase;
+            // 
             // dataGridViewTextBoxColumn42
             // 
             this.dataGridViewTextBoxColumn42.DataPropertyName = "Nomer_zakypki";
@@ -2524,6 +2476,54 @@ namespace Sport_tovary
             this.dataGridViewTextBoxColumn45.HeaderText = "Price_zakypki";
             this.dataGridViewTextBoxColumn45.Name = "dataGridViewTextBoxColumn45";
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "ID_postavshika";
+            this.dataGridViewTextBoxColumn1.HeaderText = "ID_postavshika";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Name_postavshika";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Name_postavshika";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Kontaktniy_nomer";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Kontaktniy_nomer";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Kontaktnoe_litso";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Kontaktnoe_litso";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Strana";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Strana";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "Dom";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Dom";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Ulitsa";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Ulitsa";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "Gorod";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Gorod";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
             // postavshikTableAdapter
             // 
             this.postavshikTableAdapter.ClearBeforeFill = true;
@@ -2535,7 +2535,8 @@ namespace Sport_tovary
             this.tableAdapterManager.PostavshikTableAdapter = this.postavshikTableAdapter;
             this.tableAdapterManager.Prodaga_sport_tovaryTableAdapter = null;
             this.tableAdapterManager.ProdagaTableAdapter = this.prodagaTableAdapter;
-          
+            this.tableAdapterManager.Proizvoditel_postavshikTableAdapter = null;
+            
             this.tableAdapterManager.ProizvoditelTableAdapter = null;
             this.tableAdapterManager.Sport_tovaryTableAdapter = null;
             this.tableAdapterManager.StorageTableAdapter = null;
@@ -2591,8 +2592,6 @@ namespace Sport_tovary
             this.Text = "Спортивные товары";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.postavshikDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.postavshikBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataBase)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.Postavshik.ResumeLayout(false);
             this.Postavshik.PerformLayout();
@@ -2605,36 +2604,38 @@ namespace Sport_tovary
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator2)).EndInit();
             this.bindingNavigator2.ResumeLayout(false);
             this.bindingNavigator2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.prodagaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.prodagaDataGridView)).EndInit();
             this.Proizvoditel.ResumeLayout(false);
             this.Proizvoditel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator3)).EndInit();
             this.bindingNavigator3.ResumeLayout(false);
             this.bindingNavigator3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.proizvoditelBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.proizvoditelDataGridView)).EndInit();
             this.Sportivnie_tovary.ResumeLayout(false);
             this.Sportivnie_tovary.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator4)).EndInit();
             this.bindingNavigator4.ResumeLayout(false);
             this.bindingNavigator4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sport_tovaryBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sport_tovaryDataGridView)).EndInit();
             this.Storage.ResumeLayout(false);
             this.Storage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator5)).EndInit();
             this.bindingNavigator5.ResumeLayout(false);
             this.bindingNavigator5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.storageBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.storageDataGridView)).EndInit();
             this.Zakypka.ResumeLayout(false);
             this.Zakypka.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator6)).EndInit();
             this.bindingNavigator6.ResumeLayout(false);
             this.bindingNavigator6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.zakypkaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.zakypkaDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.postavshikBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataBase)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prodagaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proizvoditelBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sport_tovaryBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.storageBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zakypkaBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

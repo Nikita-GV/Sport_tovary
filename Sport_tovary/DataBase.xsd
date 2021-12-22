@@ -959,15 +959,15 @@ SELECT Nomer_zakypki, Name_postavshika, Sposob_dostavki, Price_zakypki FROM Zaky
       <xs:selector xpath=".//mstns:Prodaga" />
       <xs:field xpath="mstns:Nomer_prodagy" />
     </xs:unique>
-    <xs:unique name="Proizvoditel_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+    <xs:unique name="Proizvoditel_Constraint1" msdata:ConstraintName="Constraint1">
       <xs:selector xpath=".//mstns:Proizvoditel" />
       <xs:field xpath="mstns:ID_tovara" />
     </xs:unique>
-    <xs:unique name="Sport_tovary_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+    <xs:unique name="Sport_tovary_Constraint1" msdata:ConstraintName="Constraint1">
       <xs:selector xpath=".//mstns:Sport_tovary" />
-      <xs:field xpath="mstns:ID_tovara" />
+      <xs:field xpath="mstns:Name_tovara" />
     </xs:unique>
-    <xs:unique name="Storage_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+    <xs:unique name="Storage_Constraint1" msdata:ConstraintName="Constraint1">
       <xs:selector xpath=".//mstns:Storage" />
       <xs:field xpath="mstns:ID_tovara" />
     </xs:unique>
@@ -994,14 +994,12 @@ SELECT Nomer_zakypki, Name_postavshika, Sposob_dostavki, Price_zakypki FROM Zaky
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="FK_Sport_tovary_Proizvoditel" msdata:parent="Proizvoditel" msdata:child="Sport_tovary" msdata:parentkey="ID_tovara" msdata:childkey="ID_tovara" msprop:Generator_UserChildTable="Sport_tovary" msprop:Generator_ChildPropName="GetSport_tovaryRows" msprop:Generator_UserRelationName="FK_Sport_tovary_Proizvoditel" msprop:Generator_ParentPropName="ProizvoditelRow" msprop:Generator_RelationVarName="relationFK_Sport_tovary_Proizvoditel" msprop:Generator_UserParentTable="Proizvoditel" />
       <msdata:Relationship name="FK_Postavshik_zakypka_Zakypka" msdata:parent="Zakypka" msdata:child="Postavshik_zakypka" msdata:parentkey="Nomer_zakypki" msdata:childkey="Nomer_zakypki" msprop:Generator_UserChildTable="Postavshik_zakypka" msprop:Generator_ChildPropName="GetPostavshik_zakypkaRows" msprop:Generator_UserRelationName="FK_Postavshik_zakypka_Zakypka" msprop:Generator_RelationVarName="relationFK_Postavshik_zakypka_Zakypka" msprop:Generator_UserParentTable="Zakypka" msprop:Generator_ParentPropName="ZakypkaRow" />
       <msdata:Relationship name="FK_Postavshik_zakypka_Postavshik" msdata:parent="Postavshik" msdata:child="Postavshik_zakypka" msdata:parentkey="ID_postavshika" msdata:childkey="ID_postavshika" msprop:Generator_UserChildTable="Postavshik_zakypka" msprop:Generator_ChildPropName="GetPostavshik_zakypkaRows" msprop:Generator_UserRelationName="FK_Postavshik_zakypka_Postavshik" msprop:Generator_ParentPropName="PostavshikRow" msprop:Generator_RelationVarName="relationFK_Postavshik_zakypka_Postavshik" msprop:Generator_UserParentTable="Postavshik" />
       <msdata:Relationship name="FK_Prodaga_sport_tovary_Prodaga" msdata:parent="Prodaga" msdata:child="Prodaga_sport_tovary" msdata:parentkey="Nomer_prodagy" msdata:childkey="Nomer_prodagy" msprop:Generator_UserChildTable="Prodaga_sport_tovary" msprop:Generator_ChildPropName="GetProdaga_sport_tovaryRows" msprop:Generator_UserRelationName="FK_Prodaga_sport_tovary_Prodaga" msprop:Generator_ParentPropName="ProdagaRow" msprop:Generator_RelationVarName="relationFK_Prodaga_sport_tovary_Prodaga" msprop:Generator_UserParentTable="Prodaga" />
-      <msdata:Relationship name="FK_Proizvoditel_postavshik_Proizvoditel" msdata:parent="Proizvoditel" msdata:child="Proizvoditel_postavshik" msdata:parentkey="ID_tovara" msdata:childkey="ID_tovara" msprop:Generator_UserChildTable="Proizvoditel_postavshik" msprop:Generator_ChildPropName="GetProizvoditel_postavshikRows" msprop:Generator_UserRelationName="FK_Proizvoditel_postavshik_Proizvoditel" msprop:Generator_ParentPropName="ProizvoditelRow" msprop:Generator_RelationVarName="relationFK_Proizvoditel_postavshik_Proizvoditel" msprop:Generator_UserParentTable="Proizvoditel" />
       <msdata:Relationship name="FK_Proizvoditel_postavshik_Postavshik" msdata:parent="Postavshik" msdata:child="Proizvoditel_postavshik" msdata:parentkey="ID_postavshika" msdata:childkey="ID_postavshika" msprop:Generator_UserChildTable="Proizvoditel_postavshik" msprop:Generator_ChildPropName="GetProizvoditel_postavshikRows" msprop:Generator_UserRelationName="FK_Proizvoditel_postavshik_Postavshik" msprop:Generator_ParentPropName="PostavshikRow" msprop:Generator_RelationVarName="relationFK_Proizvoditel_postavshik_Postavshik" msprop:Generator_UserParentTable="Postavshik" />
-      <msdata:Relationship name="FK_Proizvoditel_Proizvoditel_sport_tovary" msdata:parent="Proizvoditel_sport_tovary" msdata:child="Proizvoditel" msdata:parentkey="ID_tovara" msdata:childkey="ID_tovara" msprop:Generator_UserChildTable="Proizvoditel" msprop:Generator_ChildPropName="GetProizvoditelRows" msprop:Generator_UserRelationName="FK_Proizvoditel_Proizvoditel_sport_tovary" msprop:Generator_RelationVarName="relationFK_Proizvoditel_Proizvoditel_sport_tovary" msprop:Generator_UserParentTable="Proizvoditel_sport_tovary" msprop:Generator_ParentPropName="Proizvoditel_sport_tovaryRow" />
       <msdata:Relationship name="FK_Sport_tovary_Proizvoditel_sport_tovary" msdata:parent="Proizvoditel_sport_tovary" msdata:child="Sport_tovary" msdata:parentkey="ID_tovara" msdata:childkey="ID_tovara" msprop:Generator_UserChildTable="Sport_tovary" msprop:Generator_ChildPropName="GetSport_tovaryRows" msprop:Generator_UserRelationName="FK_Sport_tovary_Proizvoditel_sport_tovary" msprop:Generator_ParentPropName="Proizvoditel_sport_tovaryRow" msprop:Generator_RelationVarName="relationFK_Sport_tovary_Proizvoditel_sport_tovary" msprop:Generator_UserParentTable="Proizvoditel_sport_tovary" />
+      <msdata:Relationship name="FK_Proizvoditel_Proizvoditel_sport_tovary" msdata:parent="Proizvoditel_sport_tovary" msdata:child="Proizvoditel" msdata:parentkey="ID_tovara" msdata:childkey="ID_tovara" msprop:Generator_UserChildTable="Proizvoditel" msprop:Generator_ChildPropName="GetProizvoditelRows" msprop:Generator_UserRelationName="FK_Proizvoditel_Proizvoditel_sport_tovary" msprop:Generator_RelationVarName="relationFK_Proizvoditel_Proizvoditel_sport_tovary" msprop:Generator_UserParentTable="Proizvoditel_sport_tovary" msprop:Generator_ParentPropName="Proizvoditel_sport_tovaryRow" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

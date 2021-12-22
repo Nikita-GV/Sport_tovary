@@ -44,21 +44,17 @@ namespace Sport_tovary {
         
         private ZakypkaDataTable tableZakypka;
         
-        private global::System.Data.DataRelation relationFK_Sport_tovary_Proizvoditel;
-        
         private global::System.Data.DataRelation relationFK_Postavshik_zakypka_Zakypka;
         
         private global::System.Data.DataRelation relationFK_Postavshik_zakypka_Postavshik;
         
         private global::System.Data.DataRelation relationFK_Prodaga_sport_tovary_Prodaga;
         
-        private global::System.Data.DataRelation relationFK_Proizvoditel_postavshik_Proizvoditel;
-        
         private global::System.Data.DataRelation relationFK_Proizvoditel_postavshik_Postavshik;
         
-        private global::System.Data.DataRelation relationFK_Proizvoditel_Proizvoditel_sport_tovary;
-        
         private global::System.Data.DataRelation relationFK_Sport_tovary_Proizvoditel_sport_tovary;
+        
+        private global::System.Data.DataRelation relationFK_Proizvoditel_Proizvoditel_sport_tovary;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -426,14 +422,12 @@ namespace Sport_tovary {
                     this.tableZakypka.InitVars();
                 }
             }
-            this.relationFK_Sport_tovary_Proizvoditel = this.Relations["FK_Sport_tovary_Proizvoditel"];
             this.relationFK_Postavshik_zakypka_Zakypka = this.Relations["FK_Postavshik_zakypka_Zakypka"];
             this.relationFK_Postavshik_zakypka_Postavshik = this.Relations["FK_Postavshik_zakypka_Postavshik"];
             this.relationFK_Prodaga_sport_tovary_Prodaga = this.Relations["FK_Prodaga_sport_tovary_Prodaga"];
-            this.relationFK_Proizvoditel_postavshik_Proizvoditel = this.Relations["FK_Proizvoditel_postavshik_Proizvoditel"];
             this.relationFK_Proizvoditel_postavshik_Postavshik = this.Relations["FK_Proizvoditel_postavshik_Postavshik"];
-            this.relationFK_Proizvoditel_Proizvoditel_sport_tovary = this.Relations["FK_Proizvoditel_Proizvoditel_sport_tovary"];
             this.relationFK_Sport_tovary_Proizvoditel_sport_tovary = this.Relations["FK_Sport_tovary_Proizvoditel_sport_tovary"];
+            this.relationFK_Proizvoditel_Proizvoditel_sport_tovary = this.Relations["FK_Proizvoditel_Proizvoditel_sport_tovary"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -464,10 +458,6 @@ namespace Sport_tovary {
             base.Tables.Add(this.tableStorage);
             this.tableZakypka = new ZakypkaDataTable();
             base.Tables.Add(this.tableZakypka);
-            this.relationFK_Sport_tovary_Proizvoditel = new global::System.Data.DataRelation("FK_Sport_tovary_Proizvoditel", new global::System.Data.DataColumn[] {
-                        this.tableProizvoditel.ID_tovaraColumn}, new global::System.Data.DataColumn[] {
-                        this.tableSport_tovary.ID_tovaraColumn}, false);
-            this.Relations.Add(this.relationFK_Sport_tovary_Proizvoditel);
             this.relationFK_Postavshik_zakypka_Zakypka = new global::System.Data.DataRelation("FK_Postavshik_zakypka_Zakypka", new global::System.Data.DataColumn[] {
                         this.tableZakypka.Nomer_zakypkiColumn}, new global::System.Data.DataColumn[] {
                         this.tablePostavshik_zakypka.Nomer_zakypkiColumn}, false);
@@ -480,22 +470,18 @@ namespace Sport_tovary {
                         this.tableProdaga.Nomer_prodagyColumn}, new global::System.Data.DataColumn[] {
                         this.tableProdaga_sport_tovary.Nomer_prodagyColumn}, false);
             this.Relations.Add(this.relationFK_Prodaga_sport_tovary_Prodaga);
-            this.relationFK_Proizvoditel_postavshik_Proizvoditel = new global::System.Data.DataRelation("FK_Proizvoditel_postavshik_Proizvoditel", new global::System.Data.DataColumn[] {
-                        this.tableProizvoditel.ID_tovaraColumn}, new global::System.Data.DataColumn[] {
-                        this.tableProizvoditel_postavshik.ID_tovaraColumn}, false);
-            this.Relations.Add(this.relationFK_Proizvoditel_postavshik_Proizvoditel);
             this.relationFK_Proizvoditel_postavshik_Postavshik = new global::System.Data.DataRelation("FK_Proizvoditel_postavshik_Postavshik", new global::System.Data.DataColumn[] {
                         this.tablePostavshik.ID_postavshikaColumn}, new global::System.Data.DataColumn[] {
                         this.tableProizvoditel_postavshik.ID_postavshikaColumn}, false);
             this.Relations.Add(this.relationFK_Proizvoditel_postavshik_Postavshik);
-            this.relationFK_Proizvoditel_Proizvoditel_sport_tovary = new global::System.Data.DataRelation("FK_Proizvoditel_Proizvoditel_sport_tovary", new global::System.Data.DataColumn[] {
-                        this.tableProizvoditel_sport_tovary.ID_tovaraColumn}, new global::System.Data.DataColumn[] {
-                        this.tableProizvoditel.ID_tovaraColumn}, false);
-            this.Relations.Add(this.relationFK_Proizvoditel_Proizvoditel_sport_tovary);
             this.relationFK_Sport_tovary_Proizvoditel_sport_tovary = new global::System.Data.DataRelation("FK_Sport_tovary_Proizvoditel_sport_tovary", new global::System.Data.DataColumn[] {
                         this.tableProizvoditel_sport_tovary.ID_tovaraColumn}, new global::System.Data.DataColumn[] {
                         this.tableSport_tovary.ID_tovaraColumn}, false);
             this.Relations.Add(this.relationFK_Sport_tovary_Proizvoditel_sport_tovary);
+            this.relationFK_Proizvoditel_Proizvoditel_sport_tovary = new global::System.Data.DataRelation("FK_Proizvoditel_Proizvoditel_sport_tovary", new global::System.Data.DataColumn[] {
+                        this.tableProizvoditel_sport_tovary.ID_tovaraColumn}, new global::System.Data.DataColumn[] {
+                        this.tableProizvoditel.ID_tovaraColumn}, false);
+            this.Relations.Add(this.relationFK_Proizvoditel_Proizvoditel_sport_tovary);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2215,13 +2201,6 @@ namespace Sport_tovary {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public ProizvoditelRow FindByID_tovara(long ID_tovara) {
-                return ((ProizvoditelRow)(this.Rows.Find(new object[] {
-                            ID_tovara})));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public override global::System.Data.DataTable Clone() {
                 ProizvoditelDataTable cln = ((ProizvoditelDataTable)(base.Clone()));
                 cln.InitVars();
@@ -2270,7 +2249,7 @@ namespace Sport_tovary {
                 this.columnName_proizvoditel = new global::System.Data.DataColumn("Name_proizvoditel", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnName_proizvoditel);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnID_tovara}, true));
+                                this.columnID_tovara}, false));
                 this.columnID_tovara.AllowDBNull = false;
                 this.columnID_tovara.Unique = true;
                 this.columnKontaktniy_nomer.AllowDBNull = false;
@@ -2519,15 +2498,12 @@ namespace Sport_tovary {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Proizvoditel_postavshikRow AddProizvoditel_postavshikRow(long ID_postavshik_proizvoditel, ProizvoditelRow parentProizvoditelRowByFK_Proizvoditel_postavshik_Proizvoditel, PostavshikRow parentPostavshikRowByFK_Proizvoditel_postavshik_Postavshik) {
+            public Proizvoditel_postavshikRow AddProizvoditel_postavshikRow(long ID_postavshik_proizvoditel, long ID_tovara, PostavshikRow parentPostavshikRowByFK_Proizvoditel_postavshik_Postavshik) {
                 Proizvoditel_postavshikRow rowProizvoditel_postavshikRow = ((Proizvoditel_postavshikRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         ID_postavshik_proizvoditel,
-                        null,
+                        ID_tovara,
                         null};
-                if ((parentProizvoditelRowByFK_Proizvoditel_postavshik_Proizvoditel != null)) {
-                    columnValuesArray[1] = parentProizvoditelRowByFK_Proizvoditel_postavshik_Proizvoditel[0];
-                }
                 if ((parentPostavshikRowByFK_Proizvoditel_postavshik_Postavshik != null)) {
                     columnValuesArray[2] = parentPostavshikRowByFK_Proizvoditel_postavshik_Postavshik[0];
                 }
@@ -3123,7 +3099,7 @@ namespace Sport_tovary {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Sport_tovaryRow AddSport_tovaryRow(ProizvoditelRow parentProizvoditelRowByFK_Sport_tovary_Proizvoditel, string Name_tovara, string Material, string Razmer, string Forma_tovara) {
+            public Sport_tovaryRow AddSport_tovaryRow(Proizvoditel_sport_tovaryRow parentProizvoditel_sport_tovaryRowByFK_Sport_tovary_Proizvoditel_sport_tovary, string Name_tovara, string Material, string Razmer, string Forma_tovara) {
                 Sport_tovaryRow rowSport_tovaryRow = ((Sport_tovaryRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -3131,19 +3107,12 @@ namespace Sport_tovary {
                         Material,
                         Razmer,
                         Forma_tovara};
-                if ((parentProizvoditelRowByFK_Sport_tovary_Proizvoditel != null)) {
-                    columnValuesArray[0] = parentProizvoditelRowByFK_Sport_tovary_Proizvoditel[0];
+                if ((parentProizvoditel_sport_tovaryRowByFK_Sport_tovary_Proizvoditel_sport_tovary != null)) {
+                    columnValuesArray[0] = parentProizvoditel_sport_tovaryRowByFK_Sport_tovary_Proizvoditel_sport_tovary[0];
                 }
                 rowSport_tovaryRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowSport_tovaryRow);
                 return rowSport_tovaryRow;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Sport_tovaryRow FindByID_tovara(long ID_tovara) {
-                return ((Sport_tovaryRow)(this.Rows.Find(new object[] {
-                            ID_tovara})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3184,10 +3153,10 @@ namespace Sport_tovary {
                 this.columnForma_tovara = new global::System.Data.DataColumn("Forma_tovara", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnForma_tovara);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnID_tovara}, true));
+                                this.columnName_tovara}, false));
                 this.columnID_tovara.AllowDBNull = false;
-                this.columnID_tovara.Unique = true;
                 this.columnName_tovara.AllowDBNull = false;
+                this.columnName_tovara.Unique = true;
                 this.columnName_tovara.MaxLength = 50;
                 this.columnMaterial.AllowDBNull = false;
                 this.columnMaterial.MaxLength = 50;
@@ -3463,13 +3432,6 @@ namespace Sport_tovary {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public StorageRow FindByID_tovara(long ID_tovara) {
-                return ((StorageRow)(this.Rows.Find(new object[] {
-                            ID_tovara})));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public override global::System.Data.DataTable Clone() {
                 StorageDataTable cln = ((StorageDataTable)(base.Clone()));
                 cln.InitVars();
@@ -3506,7 +3468,7 @@ namespace Sport_tovary {
                 this.columnKolichestvo_tovarov = new global::System.Data.DataColumn("Kolichestvo_tovarov", typeof(long), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnKolichestvo_tovarov);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnID_tovara}, true));
+                                this.columnID_tovara}, false));
                 this.columnID_tovara.AllowDBNull = false;
                 this.columnID_tovara.Unique = true;
                 this.columnSylka_na_tovar.AllowDBNull = false;
@@ -4497,28 +4459,6 @@ namespace Sport_tovary {
             public void SetName_proizvoditelNull() {
                 this[this.tableProizvoditel.Name_proizvoditelColumn] = global::System.Convert.DBNull;
             }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Sport_tovaryRow[] GetSport_tovaryRows() {
-                if ((this.Table.ChildRelations["FK_Sport_tovary_Proizvoditel"] == null)) {
-                    return new Sport_tovaryRow[0];
-                }
-                else {
-                    return ((Sport_tovaryRow[])(base.GetChildRows(this.Table.ChildRelations["FK_Sport_tovary_Proizvoditel"])));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Proizvoditel_postavshikRow[] GetProizvoditel_postavshikRows() {
-                if ((this.Table.ChildRelations["FK_Proizvoditel_postavshik_Proizvoditel"] == null)) {
-                    return new Proizvoditel_postavshikRow[0];
-                }
-                else {
-                    return ((Proizvoditel_postavshikRow[])(base.GetChildRows(this.Table.ChildRelations["FK_Proizvoditel_postavshik_Proizvoditel"])));
-                }
-            }
         }
         
         /// <summary>
@@ -4565,17 +4505,6 @@ namespace Sport_tovary {
                 }
                 set {
                     this[this.tableProizvoditel_postavshik.ID_postavshikaColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public ProizvoditelRow ProizvoditelRow {
-                get {
-                    return ((ProizvoditelRow)(this.GetParentRow(this.Table.ParentRelations["FK_Proizvoditel_postavshik_Proizvoditel"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_Proizvoditel_postavshik_Proizvoditel"]);
                 }
             }
             
@@ -4640,23 +4569,23 @@ namespace Sport_tovary {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public ProizvoditelRow[] GetProizvoditelRows() {
-                if ((this.Table.ChildRelations["FK_Proizvoditel_Proizvoditel_sport_tovary"] == null)) {
-                    return new ProizvoditelRow[0];
-                }
-                else {
-                    return ((ProizvoditelRow[])(base.GetChildRows(this.Table.ChildRelations["FK_Proizvoditel_Proizvoditel_sport_tovary"])));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public Sport_tovaryRow[] GetSport_tovaryRows() {
                 if ((this.Table.ChildRelations["FK_Sport_tovary_Proizvoditel_sport_tovary"] == null)) {
                     return new Sport_tovaryRow[0];
                 }
                 else {
                     return ((Sport_tovaryRow[])(base.GetChildRows(this.Table.ChildRelations["FK_Sport_tovary_Proizvoditel_sport_tovary"])));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public ProizvoditelRow[] GetProizvoditelRows() {
+                if ((this.Table.ChildRelations["FK_Proizvoditel_Proizvoditel_sport_tovary"] == null)) {
+                    return new ProizvoditelRow[0];
+                }
+                else {
+                    return ((ProizvoditelRow[])(base.GetChildRows(this.Table.ChildRelations["FK_Proizvoditel_Proizvoditel_sport_tovary"])));
                 }
             }
         }
@@ -4727,17 +4656,6 @@ namespace Sport_tovary {
                 }
                 set {
                     this[this.tableSport_tovary.Forma_tovaraColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public ProizvoditelRow ProizvoditelRow {
-                get {
-                    return ((ProizvoditelRow)(this.GetParentRow(this.Table.ParentRelations["FK_Sport_tovary_Proizvoditel"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_Sport_tovary_Proizvoditel"]);
                 }
             }
             
@@ -7347,31 +7265,6 @@ SELECT ID_tovara, Kontaktniy_nomer, Kontaktnoe_litso, Name_tovara, Strana, Dom, 
                 }
             }
         }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(
-                    long Kontaktniy_nomer, 
-                    string Kontaktnoe_litso, 
-                    string Name_tovara, 
-                    string Strana, 
-                    long Dom, 
-                    string Ulitsa, 
-                    string Gorod, 
-                    string Name_proizvoditel, 
-                    long Original_ID_tovara, 
-                    long Original_Kontaktniy_nomer, 
-                    string Original_Kontaktnoe_litso, 
-                    string Original_Name_tovara, 
-                    string Original_Strana, 
-                    long Original_Dom, 
-                    string Original_Ulitsa, 
-                    string Original_Gorod, 
-                    string Original_Name_proizvoditel) {
-            return this.Update(Original_ID_tovara, Kontaktniy_nomer, Kontaktnoe_litso, Name_tovara, Strana, Dom, Ulitsa, Gorod, Name_proizvoditel, Original_ID_tovara, Original_Kontaktniy_nomer, Original_Kontaktnoe_litso, Original_Name_tovara, Original_Strana, Original_Dom, Original_Ulitsa, Original_Gorod, Original_Name_proizvoditel);
-        }
     }
     
     /// <summary>
@@ -8432,14 +8325,6 @@ SELECT ID_tovara, Name_tovara, Material, Razmer, Forma_tovara FROM Sport_tovary 
                 }
             }
         }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string Name_tovara, string Material, string Razmer, string Forma_tovara, long Original_ID_tovara, string Original_Name_tovara, string Original_Material, string Original_Razmer, string Original_Forma_tovara) {
-            return this.Update(Original_ID_tovara, Name_tovara, Material, Razmer, Forma_tovara, Original_ID_tovara, Original_Name_tovara, Original_Material, Original_Razmer, Original_Forma_tovara);
-        }
     }
     
     /// <summary>
@@ -8777,14 +8662,6 @@ SELECT ID_tovara, Sylka_na_tovar, Price_zakypki, Price_prodagy, Kolichestvo_tova
                     this.Adapter.UpdateCommand.Connection.Close();
                 }
             }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string Sylka_na_tovar, long Price_zakypki, long Price_prodagy, long Kolichestvo_tovarov, long Original_ID_tovara, string Original_Sylka_na_tovar, long Original_Price_zakypki, long Original_Price_prodagy, long Original_Kolichestvo_tovarov) {
-            return this.Update(Original_ID_tovara, Sylka_na_tovar, Price_zakypki, Price_prodagy, Kolichestvo_tovarov, Original_ID_tovara, Original_Sylka_na_tovar, Original_Price_zakypki, Original_Price_prodagy, Original_Kolichestvo_tovarov);
         }
     }
     
@@ -9447,15 +9324,6 @@ SELECT Nomer_zakypki, Name_postavshika, Sposob_dostavki, Price_zakypki FROM Zaky
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private int UpdateUpdatedRows(DataBase dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._proizvoditel_sport_tovaryTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.Proizvoditel_sport_tovary.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._proizvoditel_sport_tovaryTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
             if ((this._postavshikTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.Postavshik.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
@@ -9474,21 +9342,30 @@ SELECT Nomer_zakypki, Name_postavshika, Sposob_dostavki, Price_zakypki FROM Zaky
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._proizvoditelTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.Proizvoditel.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._proizvoditelTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
             if ((this._zakypkaTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.Zakypka.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
                     result = (result + this._zakypkaTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._proizvoditel_sport_tovaryTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Proizvoditel_sport_tovary.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._proizvoditel_sport_tovaryTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._proizvoditelTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Proizvoditel.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._proizvoditelTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -9547,14 +9424,6 @@ SELECT Nomer_zakypki, Name_postavshika, Sposob_dostavki, Price_zakypki FROM Zaky
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private int UpdateInsertedRows(DataBase dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._proizvoditel_sport_tovaryTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.Proizvoditel_sport_tovary.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._proizvoditel_sport_tovaryTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
             if ((this._postavshikTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.Postavshik.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
@@ -9571,19 +9440,27 @@ SELECT Nomer_zakypki, Name_postavshika, Sposob_dostavki, Price_zakypki FROM Zaky
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._proizvoditelTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.Proizvoditel.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._proizvoditelTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
             if ((this._zakypkaTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.Zakypka.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._zakypkaTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._proizvoditel_sport_tovaryTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Proizvoditel_sport_tovary.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._proizvoditel_sport_tovaryTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._proizvoditelTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Proizvoditel.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._proizvoditelTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -9677,19 +9554,27 @@ SELECT Nomer_zakypki, Name_postavshika, Sposob_dostavki, Price_zakypki FROM Zaky
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._zakypkaTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.Zakypka.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._zakypkaTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
             if ((this._proizvoditelTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.Proizvoditel.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._proizvoditelTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._proizvoditel_sport_tovaryTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Proizvoditel_sport_tovary.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._proizvoditel_sport_tovaryTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._zakypkaTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Zakypka.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._zakypkaTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -9706,14 +9591,6 @@ SELECT Nomer_zakypki, Name_postavshika, Sposob_dostavki, Price_zakypki FROM Zaky
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._postavshikTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._proizvoditel_sport_tovaryTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.Proizvoditel_sport_tovary.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._proizvoditel_sport_tovaryTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }

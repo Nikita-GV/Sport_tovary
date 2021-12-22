@@ -8,3 +8,4 @@ C:\Users\Пользователь\source\repos\Sport_tovary\Sport_tovary\obj\Deb
 C:\Users\Пользователь\source\repos\Sport_tovary\Sport_tovary\obj\Debug\Sport_tovary.csproj.CoreCompileInputs.cache
 C:\Users\Пользователь\source\repos\Sport_tovary\Sport_tovary\obj\Debug\Sport_tovary.exe
 C:\Users\Пользователь\source\repos\Sport_tovary\Sport_tovary\obj\Debug\Sport_tovary.pdb
+C:\Users\Пользователь\source\repos\Sport_tovary\Sport_tovary\obj\Debug\Sport_tovary.Form2.resources
